@@ -1,0 +1,17 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	FIBON             3004
+//	LOOP              3010
+//	ERROR             3017
+//	SMALL             301A
+//	DONE              301C
+//	NUMBER_N2         3021
+//	INPUT             3022
+//	RESULT            3023
+//	FIBON_SAVER1      3024
+//	FIBON_SAVER2      3025
+//	FIBON_SAVER3      3026
+//	FIBON_SAVER4      3027
+

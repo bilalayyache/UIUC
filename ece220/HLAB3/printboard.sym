@@ -1,0 +1,24 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	PRINTBOARD        3600
+//	PB_NEXT_CHAR      360B
+//	PB_PLAYER1        3612
+//	PB_PLAYER2        3615
+//	FINISH_ONECHAR    3617
+//	PB_NEXT_ROW       361B
+//	COMPLETE_BOARD    3621
+//	PRINTBOARD_SAVER0  362A
+//	PRINTBOARD_SAVER1  362B
+//	PRINTBOARD_SAVER2  362C
+//	PRINTBOARD_SAVER3  362D
+//	PRINTBOARD_SAVER4  362E
+//	PRINTBOARD_SAVER7  362F
+//	PB_BOARD          3630
+//	PB_ASCII_ZERO     3631
+//	PB_NEWLINE        3632
+//	PB_EMPTY_PIECE    3633
+//	PB_P1_PIECE       3634
+//	PB_P2_PIECE       3635
+

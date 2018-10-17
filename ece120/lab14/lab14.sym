@@ -1,0 +1,18 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NEXT_ROW          3002
+//	NEXT_CHAR         3005
+//	NEXT_COLUMN       3010
+//	OUTPUT            3014
+//	NEGATIVE          3018
+//	DONE_CHAR         301A
+//	CHAR_NULL         301C
+//	DONE              3020
+//	ZERO              3021
+//	ONE               3022
+//	CHAR_DATA         3023
+//	ASCII_NL          3024
+//	FONT_DATA         3025
+

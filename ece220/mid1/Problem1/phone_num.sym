@@ -1,0 +1,22 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	START             3003
+//	ECHO              3006
+//	CHECK             3013
+//	NOT_NUMBER        301E
+//	DONE_CHECK        301F
+//	DONE_INPUT        3020
+//	INVALID           3027
+//	DONE              3029
+//	NEWLINE           302A
+//	ASCII_0           302B
+//	ASCII_9           302C
+//	KBSR              302D
+//	KBDR              302E
+//	DSR               302F
+//	DDR               3030
+//	INV_MSG           3031
+//	VAL_MSG           3047
+

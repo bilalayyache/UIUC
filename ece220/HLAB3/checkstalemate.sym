@@ -1,0 +1,14 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	CHECKSTALEMATE    3C00
+//	CS_NEXT_CHAR      3C07
+//	CS_NOT_FULL       3C0F
+//	CS_DONE           3C10
+//	CS_SAVER1         3C15
+//	CS_SAVER3         3C16
+//	CS_SAVER4         3C17
+//	CS_SAVER7         3C18
+//	CS_BOARD          3C19
+

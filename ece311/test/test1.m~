@@ -1,0 +1,19 @@
+clear all
+close all
+clc
+
+ws1 = pi / 5;
+wp1 = pi / 4;
+wc1 = (ws1 + wp1) / 2;
+delta1 = wp1 - ws1;
+
+wp2 = 0.4 * pi;
+ws2 = 0.5 * pi;
+wc2 = (wp2 + ws2) / 2;
+delta2 = ws2 - wp2;
+
+L = 161;
+w = hamming(L);
+
+
+

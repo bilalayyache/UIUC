@@ -1,0 +1,2 @@
+In the parallel implement of the counter, the code tried to use the logic that appeared in the serial implement. The main problem is following: For P1 in parallel counter, it tried to use previous variable (i.e P0) to implement the logic. However the values stored in P0 was changed by the code above. Same reason that the wrong values stored in P2 and P3.
+To correct this mistake, we can simply change the order in calculating P0,P1,P2,P3. We can first do P3, followed by P2, P1 and P0.

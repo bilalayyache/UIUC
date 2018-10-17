@@ -1,0 +1,10 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NEXT              3003
+//	NOTSPACE          3008
+//	DONE              300D
+//	SPACE             300E
+//	STRING            300F
+

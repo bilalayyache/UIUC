@@ -1,0 +1,17 @@
+clear all
+close all
+clc
+
+data1 = csvread('curve1.csv', 1, 0);
+data2 = csvread('curve2.csv', 1, 0);
+data3 = csvread('curve3.csv', 1, 0);
+
+i1 = (data1(:, 2) - data1(4, :)) / 1000;
+i2 = (data2(:, 2) - data2(4, :)) / 1000;
+i3 = (data3(2, 2) - data3(4, 4)) / 1000;
+
+r0_1 = data1(4, :) ./ i1;
+r0_2 = data2(4, :) ./ i2;
+r0_3 = data3(4, :) ./ i3;
+
+scatter(data1(1, :), r0_1)

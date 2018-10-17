@@ -1,0 +1,18 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	UPDATEBOARD       3800
+//	UB_NEXT_ROW       3812
+//	UB_BOTTOM_ROW     3819
+//	FAIL              381C
+//	DONE_UB           381D
+//	UB_SAVER1         3825
+//	UB_SAVER2         3826
+//	UB_SAVER3         3827
+//	UB_SAVER4         3828
+//	UB_SAVER5         3829
+//	UB_SAVER6         382A
+//	UB_SAVER7         382B
+//	UB_BOARD          382C
+

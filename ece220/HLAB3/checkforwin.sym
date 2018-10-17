@@ -1,0 +1,25 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	CHECKFORWIN       3A00
+//	CW_ROWCHECK       3A1B
+//	CW_NEXT_CHECK     3A21
+//	CW_DIAGCHECK      3A33
+//	CW_WIN            3A36
+//	CW_NOT_WIN        3A39
+//	CW_DONE           3A3A
+//	CW_SAVER1         3A42
+//	CW_SAVER2         3A43
+//	CW_SAVER3         3A44
+//	CW_SAVER4         3A45
+//	CW_SAVER5         3A46
+//	CW_SAVER6         3A47
+//	CW_SAVER7         3A48
+//	CW_6014           3A49
+//	CW_CHECK          3A4A
+//	CW_CHECK_WIN      3A51
+//	CW_CHECK_DONE     3A52
+//	CW_CHECK_SAVER3   3A54
+//	CW_BOARD          3A55
+

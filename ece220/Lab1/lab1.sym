@@ -1,0 +1,14 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NEXT_digit        3002
+//	NEXT_bit          3006
+//	POSITIVE          300B
+//	DONE_digit        300E
+//	NUMBER            3013
+//	PRINT             3016
+//	DONE              3019
+//	ASCII_0           301A
+//	ASCII_A           301B
+

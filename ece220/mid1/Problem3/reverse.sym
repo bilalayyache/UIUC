@@ -1,0 +1,15 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	REVERSE           3002
+//	NEXT              3007
+//	DONE              300F
+//	SAVER7_REVERSE    3011
+//	SWAPMEM           3012
+//	SAVER3_SWAPMEM    3020
+//	SAVER4_SWAPMEM    3021
+//	SAVER5_SWAPMEM    3022
+//	NUM_ADDR          3023
+//	CHAR_ADDR         3024
+

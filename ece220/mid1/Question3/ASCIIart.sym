@@ -1,0 +1,10 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NEXT_CHAR         3004
+//	NEWLINE           300F
+//	IMAGEADDR         3010
+//	VALUE_N           3011
+//	VALUE_M           3012
+
