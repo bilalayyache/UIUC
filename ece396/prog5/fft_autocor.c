@@ -159,43 +159,103 @@ int main(int argc, char **argv)
     for(index = 0; index < num_sample; index++){
       tau[index] = index/(float)sr;
     }
-    float autocorrelation[num_sample];
-    // now we use the loop to find the autocorrelation for each tau value
-    for(index = 0; index < num_sample; index++){
-      float sum = 0.0;
-      int t;
-      // printf("reach here\n");
-      // for each tau value, we need to add up all x(t)*x(t+tau) for t range from t1 to t2-tau
-      // in discrete domain, the index t here is range from start_index to end_index - tau *sr
-      for(t = 0; t < num_sample-index; t++){
-        sum += input_signal[start_index+t] * input_signal[start_index+t+index];
+    // float autocorrelation[num_sample];
+    // // now we use the loop to find the autocorrelation for each tau value
+    // for(index = 0; index < num_sample; index++){
+    //   float sum = 0.0;
+    //   int t;
+    //   // printf("reach here\n");
+    //   // for each tau value, we need to add up all x(t)*x(t+tau) for t range from t1 to t2-tau
+    //   // in discrete domain, the index t here is range from start_index to end_index - tau *sr
+    //   for(t = 0; t < num_sample-index; t++){
+    //     sum += input_signal[start_index+t] * input_signal[start_index+t+index];
+    //   }
+    //   autocorrelation[index] = sum / num_sample;
+    // }
+    // // after we find out the autocorrelation, we need to normalize it to plot
+    // for(index = 1; index < num_sample; index++){
+    //   autocorrelation[index] = autocorrelation[index] / autocorrelation[0];
+    // }
+    // autocorrelation[0] = 1.0;
+    // // we find the first local maxima here
+    // int local_maxima = 0;
+    // float maxima = 0.0;
+    // float local_maxima_time = 0.0;
+    // for(index = 1; index < num_sample-1; index++){
+    //   if(autocorrelation[index] > autocorrelation[index-1]
+    //       && autocorrelation[index] > autocorrelation[index+1]
+    //         && autocorrelation[index] > maxima){
+    //     local_maxima = index;
+    //     maxima = autocorrelation[index];
+    //   }
+    // }
+    // local_maxima_time = local_maxima / (float)sr;
+    // float fundamental_freq = 1.0 / local_maxima_time;
+
+    // now we apply the fft of the signal and take the magnitude square
+    int m = 0;
+    while(pow(2., (double)(m+1)) < num_sample){
+      m++;
+    }
+    // find the number of FFT point
+    int N = pow(2., (double)(m+1));
+    float T = (float)N/sr;
+    // load the selected input signal
+    float sig[N], real[N], imag[N];
+    float mag[N], mag_[N];
+    for(index = 0; index < N; index++){
+      if(index < num_sample){
+        sig[index] = input_signal[start_index+index];
+        real[index] = sig[index];
       }
-      autocorrelation[index] = sum / num_sample;
+      else{
+        sig[index] = 0.0;
+        real[index] = 0.0;
+      }
+      imag[index] = 0.0;
     }
-    // after we find out the autocorrelation, we need to normalize it to plot
+    // do the FFT
+    fft2(real, imag, m, 2./N, 0);
+    // find the magnitude square
+    for(index = 0; index < N; index++){
+      mag[index] = sq(real[index]) + sq(imag[index]);
+      mag_[index] = 0.0;
+    }
+    // do the inverse FFT to find the autocorrelation
+    fft2(mag, mag_, m, 2./N, 1);
+    // now the mag is the IFFT of the magnitude square of the FFT of the input signal
+    // and therefore, mag should be the autocorrelation of the input signal
+    // normalize mag
     for(index = 1; index < num_sample; index++){
-      autocorrelation[index] = autocorrelation[index] / autocorrelation[0];
+      mag[index] = mag[index] / mag[0];
     }
-    autocorrelation[0] = 1.0;
+    mag[0] = 1.0;
     // we find the first local maxima here
     int local_maxima = 0;
     float maxima = 0.0;
     float local_maxima_time = 0.0;
     for(index = 1; index < num_sample-1; index++){
-      if(autocorrelation[index] > autocorrelation[index-1]
-          && autocorrelation[index] > autocorrelation[index+1]
-            && autocorrelation[index] > maxima){
+      if(mag[index] > mag[index-1]
+          && mag[index] > mag[index+1]
+            && mag[index] > maxima){
         local_maxima = index;
-        maxima = autocorrelation[index];
+        maxima = mag[index];
       }
     }
     local_maxima_time = local_maxima / (float)sr;
-    P("the autocorrelation has local maxima at time %f\n", local_maxima_time);
+    float fundamental_freq = 1.0 / local_maxima_time;
+
+
+
+
+    P("the autocorrelation has local maxima at time %f s\n", local_maxima_time);
+    P("fundamental frequency estimated is %.3f Hz\n", fundamental_freq);
     // last, we plot the graph
     title_graph = "signal vs time";
     plotseg(plot_time+start_index, input_signal+start_index, num_sample, horizontal_label, vertical_label);
     title_graph = "Autocorrelation of input signal between user input time interval";
-    plotseg(tau, autocorrelation, num_sample, "Tau", "Autocorrelation");
+    plotseg(tau, mag, num_sample, "Tau", "Autocorrelation");
+    // plotseg(tau, autocorrelation, num_sample, "Tau", "Autocorrelation");
     P("Do you want to exit the program? (Y/N) ");
     fgets(buffer, 100, stdin);
     char flag;
