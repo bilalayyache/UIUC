@@ -1,0 +1,792 @@
+PowerPlay Power Analyzer report for lab9
+Sat Apr 07 23:50:11 2018
+Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. PowerPlay Power Analyzer Summary
+  4. PowerPlay Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+ 16. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.9%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Sat Apr 07 23:50:11 2018            ;
+; Quartus Prime Version                  ; 16.1.2 Build 203 01/18/2017 SJ Standard Edition  ;
+; Revision Name                          ; lab9                                             ;
+; Top-level Entity Name                  ; AES                                              ;
+; Family                                 ; Cyclone IV E                                     ;
+; Device                                 ; EP4CE115F29C7                                    ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 236.03 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 99.04 mW                                         ;
+; I/O Thermal Power Dissipation          ; 136.99 mW                                        ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                                                  ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                     ; Setting                               ; Default Value ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                                      ; Off                                   ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                                ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Preset Cooling Solution                                                    ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                                        ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                                  ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                                  ; On                                    ; On            ;
+; Use Input Files                                                            ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off                                   ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On                                    ; On            ;
+; Specified Junction Temperature                                             ; 25                                    ; 25            ;
+; Ambient Temperature                                                        ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                                ; Off                                   ; Off           ;
+; Board Temperature                                                          ; 25                                    ; 25            ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++------------------------------------------------+
+; Indeterminate Toggle Rates                     ;
++------------------+-----------------------------+
+; Node             ; Reason                      ;
++------------------+-----------------------------+
+; AES_START        ; No valid clock domain found ;
+; RESET            ; No valid clock domain found ;
+; CLK              ; No valid clock domain found ;
+; AES_KEY[0]       ; No valid clock domain found ;
+; AES_KEY[64]      ; No valid clock domain found ;
+; AES_KEY[96]      ; No valid clock domain found ;
+; AES_KEY[32]      ; No valid clock domain found ;
+; AES_MSG_ENC[0]   ; No valid clock domain found ;
+; AES_KEY[1]       ; No valid clock domain found ;
+; AES_KEY[65]      ; No valid clock domain found ;
+; AES_KEY[97]      ; No valid clock domain found ;
+; AES_KEY[33]      ; No valid clock domain found ;
+; AES_MSG_ENC[1]   ; No valid clock domain found ;
+; AES_KEY[2]       ; No valid clock domain found ;
+; AES_KEY[66]      ; No valid clock domain found ;
+; AES_KEY[98]      ; No valid clock domain found ;
+; AES_KEY[34]      ; No valid clock domain found ;
+; AES_MSG_ENC[2]   ; No valid clock domain found ;
+; AES_KEY[3]       ; No valid clock domain found ;
+; AES_KEY[67]      ; No valid clock domain found ;
+; AES_KEY[99]      ; No valid clock domain found ;
+; AES_KEY[35]      ; No valid clock domain found ;
+; AES_MSG_ENC[3]   ; No valid clock domain found ;
+; AES_KEY[4]       ; No valid clock domain found ;
+; AES_KEY[68]      ; No valid clock domain found ;
+; AES_KEY[100]     ; No valid clock domain found ;
+; AES_KEY[36]      ; No valid clock domain found ;
+; AES_MSG_ENC[4]   ; No valid clock domain found ;
+; AES_KEY[5]       ; No valid clock domain found ;
+; AES_KEY[69]      ; No valid clock domain found ;
+; AES_KEY[101]     ; No valid clock domain found ;
+; AES_KEY[37]      ; No valid clock domain found ;
+; AES_MSG_ENC[5]   ; No valid clock domain found ;
+; AES_KEY[6]       ; No valid clock domain found ;
+; AES_KEY[70]      ; No valid clock domain found ;
+; AES_KEY[102]     ; No valid clock domain found ;
+; AES_KEY[38]      ; No valid clock domain found ;
+; AES_MSG_ENC[6]   ; No valid clock domain found ;
+; AES_KEY[7]       ; No valid clock domain found ;
+; AES_KEY[71]      ; No valid clock domain found ;
+; AES_KEY[103]     ; No valid clock domain found ;
+; AES_KEY[39]      ; No valid clock domain found ;
+; AES_MSG_ENC[7]   ; No valid clock domain found ;
+; AES_KEY[8]       ; No valid clock domain found ;
+; AES_KEY[72]      ; No valid clock domain found ;
+; AES_KEY[104]     ; No valid clock domain found ;
+; AES_KEY[40]      ; No valid clock domain found ;
+; AES_MSG_ENC[8]   ; No valid clock domain found ;
+; AES_KEY[9]       ; No valid clock domain found ;
+; AES_KEY[73]      ; No valid clock domain found ;
+; AES_KEY[105]     ; No valid clock domain found ;
+; AES_KEY[41]      ; No valid clock domain found ;
+; AES_MSG_ENC[9]   ; No valid clock domain found ;
+; AES_KEY[10]      ; No valid clock domain found ;
+; AES_KEY[74]      ; No valid clock domain found ;
+; AES_KEY[106]     ; No valid clock domain found ;
+; AES_KEY[42]      ; No valid clock domain found ;
+; AES_MSG_ENC[10]  ; No valid clock domain found ;
+; AES_KEY[11]      ; No valid clock domain found ;
+; AES_KEY[75]      ; No valid clock domain found ;
+; AES_KEY[107]     ; No valid clock domain found ;
+; AES_KEY[43]      ; No valid clock domain found ;
+; AES_MSG_ENC[11]  ; No valid clock domain found ;
+; AES_KEY[12]      ; No valid clock domain found ;
+; AES_KEY[76]      ; No valid clock domain found ;
+; AES_KEY[108]     ; No valid clock domain found ;
+; AES_KEY[44]      ; No valid clock domain found ;
+; AES_MSG_ENC[12]  ; No valid clock domain found ;
+; AES_KEY[13]      ; No valid clock domain found ;
+; AES_KEY[77]      ; No valid clock domain found ;
+; AES_KEY[109]     ; No valid clock domain found ;
+; AES_KEY[45]      ; No valid clock domain found ;
+; AES_MSG_ENC[13]  ; No valid clock domain found ;
+; AES_KEY[14]      ; No valid clock domain found ;
+; AES_KEY[78]      ; No valid clock domain found ;
+; AES_KEY[110]     ; No valid clock domain found ;
+; AES_KEY[46]      ; No valid clock domain found ;
+; AES_MSG_ENC[14]  ; No valid clock domain found ;
+; AES_KEY[15]      ; No valid clock domain found ;
+; AES_KEY[79]      ; No valid clock domain found ;
+; AES_KEY[111]     ; No valid clock domain found ;
+; AES_KEY[47]      ; No valid clock domain found ;
+; AES_MSG_ENC[15]  ; No valid clock domain found ;
+; AES_KEY[16]      ; No valid clock domain found ;
+; AES_KEY[80]      ; No valid clock domain found ;
+; AES_KEY[112]     ; No valid clock domain found ;
+; AES_KEY[48]      ; No valid clock domain found ;
+; AES_MSG_ENC[16]  ; No valid clock domain found ;
+; AES_KEY[17]      ; No valid clock domain found ;
+; AES_KEY[81]      ; No valid clock domain found ;
+; AES_KEY[113]     ; No valid clock domain found ;
+; AES_KEY[49]      ; No valid clock domain found ;
+; AES_MSG_ENC[17]  ; No valid clock domain found ;
+; AES_KEY[18]      ; No valid clock domain found ;
+; AES_KEY[82]      ; No valid clock domain found ;
+; AES_KEY[114]     ; No valid clock domain found ;
+; AES_KEY[50]      ; No valid clock domain found ;
+; AES_MSG_ENC[18]  ; No valid clock domain found ;
+; AES_KEY[19]      ; No valid clock domain found ;
+; AES_KEY[83]      ; No valid clock domain found ;
+; AES_KEY[115]     ; No valid clock domain found ;
+; AES_KEY[51]      ; No valid clock domain found ;
+; AES_MSG_ENC[19]  ; No valid clock domain found ;
+; AES_KEY[20]      ; No valid clock domain found ;
+; AES_KEY[84]      ; No valid clock domain found ;
+; AES_KEY[116]     ; No valid clock domain found ;
+; AES_KEY[52]      ; No valid clock domain found ;
+; AES_MSG_ENC[20]  ; No valid clock domain found ;
+; AES_KEY[21]      ; No valid clock domain found ;
+; AES_KEY[85]      ; No valid clock domain found ;
+; AES_KEY[117]     ; No valid clock domain found ;
+; AES_KEY[53]      ; No valid clock domain found ;
+; AES_MSG_ENC[21]  ; No valid clock domain found ;
+; AES_KEY[22]      ; No valid clock domain found ;
+; AES_KEY[86]      ; No valid clock domain found ;
+; AES_KEY[118]     ; No valid clock domain found ;
+; AES_KEY[54]      ; No valid clock domain found ;
+; AES_MSG_ENC[22]  ; No valid clock domain found ;
+; AES_KEY[23]      ; No valid clock domain found ;
+; AES_KEY[87]      ; No valid clock domain found ;
+; AES_KEY[119]     ; No valid clock domain found ;
+; AES_KEY[55]      ; No valid clock domain found ;
+; AES_MSG_ENC[23]  ; No valid clock domain found ;
+; AES_KEY[24]      ; No valid clock domain found ;
+; AES_KEY[56]      ; No valid clock domain found ;
+; AES_KEY[88]      ; No valid clock domain found ;
+; AES_KEY[120]     ; No valid clock domain found ;
+; AES_MSG_ENC[24]  ; No valid clock domain found ;
+; AES_KEY[121]     ; No valid clock domain found ;
+; AES_KEY[57]      ; No valid clock domain found ;
+; AES_KEY[25]      ; No valid clock domain found ;
+; AES_KEY[89]      ; No valid clock domain found ;
+; AES_MSG_ENC[25]  ; No valid clock domain found ;
+; AES_KEY[26]      ; No valid clock domain found ;
+; AES_KEY[58]      ; No valid clock domain found ;
+; AES_KEY[90]      ; No valid clock domain found ;
+; AES_KEY[122]     ; No valid clock domain found ;
+; AES_MSG_ENC[26]  ; No valid clock domain found ;
+; AES_KEY[123]     ; No valid clock domain found ;
+; AES_KEY[59]      ; No valid clock domain found ;
+; AES_KEY[27]      ; No valid clock domain found ;
+; AES_KEY[91]      ; No valid clock domain found ;
+; AES_MSG_ENC[27]  ; No valid clock domain found ;
+; AES_KEY[28]      ; No valid clock domain found ;
+; AES_KEY[60]      ; No valid clock domain found ;
+; AES_KEY[92]      ; No valid clock domain found ;
+; AES_KEY[124]     ; No valid clock domain found ;
+; AES_MSG_ENC[28]  ; No valid clock domain found ;
+; AES_KEY[125]     ; No valid clock domain found ;
+; AES_KEY[61]      ; No valid clock domain found ;
+; AES_KEY[29]      ; No valid clock domain found ;
+; AES_KEY[93]      ; No valid clock domain found ;
+; AES_MSG_ENC[29]  ; No valid clock domain found ;
+; AES_KEY[30]      ; No valid clock domain found ;
+; AES_KEY[62]      ; No valid clock domain found ;
+; AES_KEY[94]      ; No valid clock domain found ;
+; AES_KEY[126]     ; No valid clock domain found ;
+; AES_MSG_ENC[30]  ; No valid clock domain found ;
+; AES_KEY[127]     ; No valid clock domain found ;
+; AES_KEY[63]      ; No valid clock domain found ;
+; AES_KEY[31]      ; No valid clock domain found ;
+; AES_KEY[95]      ; No valid clock domain found ;
+; AES_MSG_ENC[31]  ; No valid clock domain found ;
+; AES_MSG_ENC[32]  ; No valid clock domain found ;
+; AES_MSG_ENC[33]  ; No valid clock domain found ;
+; AES_MSG_ENC[34]  ; No valid clock domain found ;
+; AES_MSG_ENC[35]  ; No valid clock domain found ;
+; AES_MSG_ENC[36]  ; No valid clock domain found ;
+; AES_MSG_ENC[37]  ; No valid clock domain found ;
+; AES_MSG_ENC[38]  ; No valid clock domain found ;
+; AES_MSG_ENC[39]  ; No valid clock domain found ;
+; AES_MSG_ENC[40]  ; No valid clock domain found ;
+; AES_MSG_ENC[41]  ; No valid clock domain found ;
+; AES_MSG_ENC[42]  ; No valid clock domain found ;
+; AES_MSG_ENC[43]  ; No valid clock domain found ;
+; AES_MSG_ENC[44]  ; No valid clock domain found ;
+; AES_MSG_ENC[45]  ; No valid clock domain found ;
+; AES_MSG_ENC[46]  ; No valid clock domain found ;
+; AES_MSG_ENC[47]  ; No valid clock domain found ;
+; AES_MSG_ENC[48]  ; No valid clock domain found ;
+; AES_MSG_ENC[49]  ; No valid clock domain found ;
+; AES_MSG_ENC[50]  ; No valid clock domain found ;
+; AES_MSG_ENC[51]  ; No valid clock domain found ;
+; AES_MSG_ENC[52]  ; No valid clock domain found ;
+; AES_MSG_ENC[53]  ; No valid clock domain found ;
+; AES_MSG_ENC[54]  ; No valid clock domain found ;
+; AES_MSG_ENC[55]  ; No valid clock domain found ;
+; AES_MSG_ENC[56]  ; No valid clock domain found ;
+; AES_MSG_ENC[57]  ; No valid clock domain found ;
+; AES_MSG_ENC[58]  ; No valid clock domain found ;
+; AES_MSG_ENC[59]  ; No valid clock domain found ;
+; AES_MSG_ENC[60]  ; No valid clock domain found ;
+; AES_MSG_ENC[61]  ; No valid clock domain found ;
+; AES_MSG_ENC[62]  ; No valid clock domain found ;
+; AES_MSG_ENC[63]  ; No valid clock domain found ;
+; AES_MSG_ENC[64]  ; No valid clock domain found ;
+; AES_MSG_ENC[65]  ; No valid clock domain found ;
+; AES_MSG_ENC[66]  ; No valid clock domain found ;
+; AES_MSG_ENC[67]  ; No valid clock domain found ;
+; AES_MSG_ENC[68]  ; No valid clock domain found ;
+; AES_MSG_ENC[69]  ; No valid clock domain found ;
+; AES_MSG_ENC[70]  ; No valid clock domain found ;
+; AES_MSG_ENC[71]  ; No valid clock domain found ;
+; AES_MSG_ENC[72]  ; No valid clock domain found ;
+; AES_MSG_ENC[73]  ; No valid clock domain found ;
+; AES_MSG_ENC[74]  ; No valid clock domain found ;
+; AES_MSG_ENC[75]  ; No valid clock domain found ;
+; AES_MSG_ENC[76]  ; No valid clock domain found ;
+; AES_MSG_ENC[77]  ; No valid clock domain found ;
+; AES_MSG_ENC[78]  ; No valid clock domain found ;
+; AES_MSG_ENC[79]  ; No valid clock domain found ;
+; AES_MSG_ENC[80]  ; No valid clock domain found ;
+; AES_MSG_ENC[81]  ; No valid clock domain found ;
+; AES_MSG_ENC[82]  ; No valid clock domain found ;
+; AES_MSG_ENC[83]  ; No valid clock domain found ;
+; AES_MSG_ENC[84]  ; No valid clock domain found ;
+; AES_MSG_ENC[85]  ; No valid clock domain found ;
+; AES_MSG_ENC[86]  ; No valid clock domain found ;
+; AES_MSG_ENC[87]  ; No valid clock domain found ;
+; AES_MSG_ENC[88]  ; No valid clock domain found ;
+; AES_MSG_ENC[89]  ; No valid clock domain found ;
+; AES_MSG_ENC[90]  ; No valid clock domain found ;
+; AES_MSG_ENC[91]  ; No valid clock domain found ;
+; AES_MSG_ENC[92]  ; No valid clock domain found ;
+; AES_MSG_ENC[93]  ; No valid clock domain found ;
+; AES_MSG_ENC[94]  ; No valid clock domain found ;
+; AES_MSG_ENC[95]  ; No valid clock domain found ;
+; AES_MSG_ENC[96]  ; No valid clock domain found ;
+; AES_MSG_ENC[97]  ; No valid clock domain found ;
+; AES_MSG_ENC[98]  ; No valid clock domain found ;
+; AES_MSG_ENC[99]  ; No valid clock domain found ;
+; AES_MSG_ENC[100] ; No valid clock domain found ;
+; AES_MSG_ENC[101] ; No valid clock domain found ;
+; AES_MSG_ENC[102] ; No valid clock domain found ;
+; AES_MSG_ENC[103] ; No valid clock domain found ;
+; AES_MSG_ENC[104] ; No valid clock domain found ;
+; AES_MSG_ENC[105] ; No valid clock domain found ;
+; AES_MSG_ENC[106] ; No valid clock domain found ;
+; AES_MSG_ENC[107] ; No valid clock domain found ;
+; AES_MSG_ENC[108] ; No valid clock domain found ;
+; AES_MSG_ENC[109] ; No valid clock domain found ;
+; AES_MSG_ENC[110] ; No valid clock domain found ;
+; AES_MSG_ENC[111] ; No valid clock domain found ;
+; AES_MSG_ENC[112] ; No valid clock domain found ;
+; AES_MSG_ENC[113] ; No valid clock domain found ;
+; AES_MSG_ENC[114] ; No valid clock domain found ;
+; AES_MSG_ENC[115] ; No valid clock domain found ;
+; AES_MSG_ENC[116] ; No valid clock domain found ;
+; AES_MSG_ENC[117] ; No valid clock domain found ;
+; AES_MSG_ENC[118] ; No valid clock domain found ;
+; AES_MSG_ENC[119] ; No valid clock domain found ;
+; AES_MSG_ENC[120] ; No valid clock domain found ;
+; AES_MSG_ENC[121] ; No valid clock domain found ;
+; AES_MSG_ENC[122] ; No valid clock domain found ;
+; AES_MSG_ENC[123] ; No valid clock domain found ;
+; AES_MSG_ENC[124] ; No valid clock domain found ;
+; AES_MSG_ENC[125] ; No valid clock domain found ;
+; AES_MSG_ENC[126] ; No valid clock domain found ;
+; AES_MSG_ENC[127] ; No valid clock domain found ;
++------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCCINT                                  ; 1.20 V                    ;
+;     VCCA                                    ; 2.50 V                    ;
+;     VCCD                                    ; 1.20 V                    ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 26.5 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 3.90 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 2.50 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                           ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type         ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; M9K                ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Combinational cell ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Register cell      ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; I/O                ; 106.99 mW                         ; 0.00 mW                     ; 106.99 mW                      ; 0.00 mW                       ;    0.000                                                  ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                             ;
++-----------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                          ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                         ;
++-----------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; |AES                                                ; 106.99 mW (106.99 mW)                ; 0.00 mW (0.00 mW)               ; 106.99 mW (106.99 mW)             ; 0.00 mW (0.00 mW)                 ; |AES                                                                                                                                        ;
+;     |control:FSM                                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|control:FSM                                                                                                                            ;
+;     |mux4:InvMixColumnMux                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|mux4:InvMixColumnMux                                                                                                                   ;
+;     |hard_block:auto_generated_inst                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|hard_block:auto_generated_inst                                                                                                         ;
+;     |InvAddRoundKey:invaddroundkey                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvAddRoundKey:invaddroundkey                                                                                                          ;
+;     |InvMixColumns:invmixcolumn                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvMixColumns:invmixcolumn                                                                                                             ;
+;         |GF_Mul_d:gfmuld_3                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvMixColumns:invmixcolumn|GF_Mul_d:gfmuld_3                                                                                           ;
+;     |InvSubBytes128:invsubbyte128                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128                                                                                                           ;
+;         |InvSubBytes32:invsubbyte32_0               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0                                                                              ;
+;             |InvSubBytes:invsubbyte0                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte0                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte1                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte1                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte2                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte2                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte3                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte3                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_0|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;         |InvSubBytes32:invsubbyte32_1               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1                                                                              ;
+;             |InvSubBytes:invsubbyte0                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte0                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte1                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte1                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte2                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte2                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte3                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte3                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_1|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;         |InvSubBytes32:invsubbyte32_2               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2                                                                              ;
+;             |InvSubBytes:invsubbyte0                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte0                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte1                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte1                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte2                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte2                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte3                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte3                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_2|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;         |InvSubBytes32:invsubbyte32_3               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3                                                                              ;
+;             |InvSubBytes:invsubbyte0                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte0                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte0|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte1                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte1                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte1|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte2                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte2                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte2|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;             |InvSubBytes:invsubbyte3                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte3                                                      ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0                                ;
+;                     |altsyncram_a471:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|InvSubBytes128:invsubbyte128|InvSubBytes32:invsubbyte32_3|InvSubBytes:invsubbyte3|altsyncram:Ram0_rtl_0|altsyncram_a471:auto_generated ;
+;     |KeyExpansion:keyexpansion                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion                                                                                                              ;
+;         |KeyExpansionOne:key_0                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_0|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_1                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_1|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_2                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_2|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_3                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_3|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_4                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_4|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_5                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_5|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_6                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_6|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_7                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_7|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_8                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_8|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;         |KeyExpansionOne:key_9                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9                                                                                        ;
+;             |SubBytes:subbytes_0                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_0                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_0|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_1                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_1                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_1|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_2                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_2                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_2|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
+;             |SubBytes:subbytes_3                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_3                                                                    ;
+;                 |altsyncram:Ram0_rtl_0              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0                                              ;
+;                     |altsyncram_8o61:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |AES|KeyExpansion:keyexpansion|KeyExpansionOne:key_9|SubBytes:subbytes_3|altsyncram:Ram0_rtl_0|altsyncram_8o61:auto_generated               ;
++-----------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; No clock domain ; 0.00                  ; 0.00                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCINT         ; 92.75 mA                ; 0.00 mA                   ; 92.75 mA                 ; 92.75 mA                         ;
+; VCCIO          ; 13.53 mA                ; 0.00 mA                   ; 13.53 mA                 ; 13.53 mA                         ;
+; VCCA           ; 35.03 mA                ; 0.00 mA                   ; 35.03 mA                 ; 35.03 mA                         ;
+; VCCD           ; 2.78 mA                 ; 0.00 mA                   ; 2.78 mA                  ; 2.78 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1        ; 2.5V          ; 1.67 mA             ; 0.00 mA               ; 1.67 mA              ;
+; 2        ; 2.5V          ; 1.72 mA             ; 0.00 mA               ; 1.72 mA              ;
+; 3        ; 2.5V          ; 1.75 mA             ; 0.00 mA               ; 1.75 mA              ;
+; 4        ; 2.5V          ; 1.75 mA             ; 0.00 mA               ; 1.75 mA              ;
+; 5        ; 2.5V          ; 1.63 mA             ; 0.00 mA               ; 1.63 mA              ;
+; 6        ; 2.5V          ; 1.58 mA             ; 0.00 mA               ; 1.58 mA              ;
+; 7        ; 2.5V          ; 1.72 mA             ; 0.00 mA               ; 1.72 mA              ;
+; 8        ; 2.5V          ; 1.71 mA             ; 0.00 mA               ; 1.71 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 13.53 mA                ; 0.00 mA                   ; 13.53 mA                 ; 13.53 mA                         ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                          ;
++----------------------------------------------------------------------------------------+--------------+-------------+--------------+---------------+
+; Data Source                                                                            ; Total        ; Pin         ; Registered   ; Combinational ;
++----------------------------------------------------------------------------------------+--------------+-------------+--------------+---------------+
+; Simulation (from file)                                                                 ;              ;             ;              ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;              ;               ;
+; Node, entity or clock assignment                                                       ;              ;             ;              ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;              ;               ;
+; Vectorless estimation                                                                  ;              ;             ;              ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 4064 (93.9%) ; 131 (33.3%) ; 141 (100.0%) ; 3792 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 1003 (23.2%) ; 2 (0.5%)    ; 0 (0.0%)     ; 1001 (26.4%)  ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 4064 (93.9%) ; 131 (33.3%) ; 141 (100.0%) ; 3792 (100.0%) ;
+;                                                                                        ;              ;             ;              ;               ;
+; Default assignment                                                                     ;              ;             ;              ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 262 (6.1%)   ; 262 (66.7%) ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;              ;               ;
+; Assumed 0                                                                              ;              ;             ;              ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 262 (6.1%)   ; 262 (66.7%) ; 0 (0.0%)     ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+--------------+-------------+--------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime PowerPlay Power Analyzer
+    Info: Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
+    Info: Processing started: Sat Apr 07 23:50:00 2018
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off lab9 -c lab9
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'lab9_soc/synthesis/submodules/altera_reset_controller.sdc'
+Info (332104): Reading SDC File: 'lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc'
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(46): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_nios2_oci_break:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci_break|break_readreg* could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(46): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab9_soc_nios2_gen2_0_cpu_debug_slave_tck:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_tck|*sr* could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(46): Argument <from> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 46
+    Info (332050): set_false_path -from [get_keepers *$lab9_soc_nios2_gen2_0_cpu_oci_break_path|break_readreg*] -to [get_keepers *$lab9_soc_nios2_gen2_0_cpu_jtag_sr*] File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(46): Argument <to> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(47): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug|*resetlatch could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(47): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab9_soc_nios2_gen2_0_cpu_debug_slave_tck:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_tck|*sr[33] could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(47): Argument <from> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 47
+    Info (332050): set_false_path -from [get_keepers *$lab9_soc_nios2_gen2_0_cpu_oci_debug_path|*resetlatch]     -to [get_keepers *$lab9_soc_nios2_gen2_0_cpu_jtag_sr[33]] File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(47): Argument <to> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(48): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug|monitor_ready could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(48): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab9_soc_nios2_gen2_0_cpu_debug_slave_tck:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_tck|*sr[0] could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(48): Argument <from> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 48
+    Info (332050): set_false_path -from [get_keepers *$lab9_soc_nios2_gen2_0_cpu_oci_debug_path|monitor_ready]  -to [get_keepers *$lab9_soc_nios2_gen2_0_cpu_jtag_sr[0]] File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(48): Argument <to> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(49): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug|monitor_error could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(49): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab9_soc_nios2_gen2_0_cpu_debug_slave_tck:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_tck|*sr[34] could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(49): Argument <from> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 49
+    Info (332050): set_false_path -from [get_keepers *$lab9_soc_nios2_gen2_0_cpu_oci_debug_path|monitor_error]  -to [get_keepers *$lab9_soc_nios2_gen2_0_cpu_jtag_sr[34]] File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(49): Argument <to> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(50): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_nios2_ocimem:the_lab9_soc_nios2_gen2_0_cpu_nios2_ocimem|*MonDReg* could not be matched with a keeper File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 50
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(50): Argument <from> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 50
+    Info (332050): set_false_path -from [get_keepers *$lab9_soc_nios2_gen2_0_cpu_ocimem_path|*MonDReg*] -to [get_keepers *$lab9_soc_nios2_gen2_0_cpu_jtag_sr*] File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 50
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(50): Argument <to> is an empty collection File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 50
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(51): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab9_soc_nios2_gen2_0_cpu_debug_slave_tck:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_tck|*sr* could not be matched with a clock or keeper or register or port or pin or cell or partition File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(51): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk|*jdo* could not be matched with a clock or keeper or register or port or pin or cell or partition File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(51): Argument <from> is not an object ID File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 51
+    Info (332050): set_false_path -from *$lab9_soc_nios2_gen2_0_cpu_jtag_sr*    -to *$lab9_soc_nios2_gen2_0_cpu_jtag_sysclk_path|*jdo* File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(51): Argument <to> is not an object ID File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(52): sld_hub:*|irf_reg* could not be matched with a clock or keeper or register or port or pin or cell or partition File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 52
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(52): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk:the_lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk|ir* could not be matched with a clock or keeper or register or port or pin or cell or partition File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 52
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(52): Argument <from> is not an object ID File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 52
+    Info (332050): set_false_path -from sld_hub:*|irf_reg* -to *$lab9_soc_nios2_gen2_0_cpu_jtag_sysclk_path|ir* File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 52
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(52): Argument <to> is not an object ID File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 52
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(53): sld_hub:*|sld_shadow_jsm:shadow_jsm|state[1] could not be matched with a clock or keeper or register or port or pin or cell or partition File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 53
+Warning (332174): Ignored filter at lab9_soc_nios2_gen2_0_cpu.sdc(53): *lab9_soc_nios2_gen2_0_cpu:*|lab9_soc_nios2_gen2_0_cpu_nios2_oci:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci|lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug:the_lab9_soc_nios2_gen2_0_cpu_nios2_oci_debug|monitor_go could not be matched with a clock or keeper or register or port or pin or cell or partition File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 53
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(53): Argument <from> is not an object ID File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 53
+    Info (332050): set_false_path -from sld_hub:*|sld_shadow_jsm:shadow_jsm|state[1] -to *$lab9_soc_nios2_gen2_0_cpu_oci_debug_path|monitor_go File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 53
+Warning (332049): Ignored set_false_path at lab9_soc_nios2_gen2_0_cpu.sdc(53): Argument <to> is not an object ID File: U:/ece385_lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc Line: 53
+Info (332104): Reading SDC File: 'lab9.sdc'
+Warning (332174): Ignored filter at lab9.sdc(2): CLOCK_50 could not be matched with a port File: U:/ece385_lab9/lab9.sdc Line: 2
+Warning (332049): Ignored create_clock at lab9.sdc(2): Argument <targets> is an empty collection File: U:/ece385_lab9/lab9.sdc Line: 2
+    Info (332050): create_clock -name {Clk} -period 20.000 -waveform { 0.000 10.000 } [get_ports {CLOCK_50}] File: U:/ece385_lab9/lab9.sdc Line: 2
+Warning (332174): Ignored filter at lab9.sdc(3): lab9_qsystem|altpll_0|sd1|pll|inclk[0] could not be matched with a pin File: U:/ece385_lab9/lab9.sdc Line: 3
+Warning (332174): Ignored filter at lab9.sdc(3): lab9_qsystem|altpll_0|sd1|pll|clk[0] could not be matched with a pin File: U:/ece385_lab9/lab9.sdc Line: 3
+Critical Warning (332049): Ignored create_generated_clock at lab9.sdc(3): Argument <targets> is an empty collection File: U:/ece385_lab9/lab9.sdc Line: 3
+    Info (332050): create_generated_clock -name {lab9_qsystem|altpll_0|sd1|pll|clk[0]} -source [get_pins {lab9_qsystem|altpll_0|sd1|pll|inclk[0]}] -duty_cycle 50.000 -multiply_by 1 -phase -54.000 -master_clock {CLOCK_50} [get_pins {lab9_qsystem|altpll_0|sd1|pll|clk[0]}]  File: U:/ece385_lab9/lab9.sdc Line: 3
+Warning (332049): Ignored create_generated_clock at lab9.sdc(3): Argument -source is an empty collection File: U:/ece385_lab9/lab9.sdc Line: 3
+Warning (332174): Ignored filter at lab9.sdc(6): Clk could not be matched with a clock File: U:/ece385_lab9/lab9.sdc Line: 6
+Warning (332049): Ignored set_input_delay at lab9.sdc(6): Argument -clock is not an object ID File: U:/ece385_lab9/lab9.sdc Line: 6
+    Info (332050): set_input_delay -clock {Clk} -max 3 [all_inputs] File: U:/ece385_lab9/lab9.sdc Line: 6
+Warning (332049): Ignored set_input_delay at lab9.sdc(7): Argument -clock is not an object ID File: U:/ece385_lab9/lab9.sdc Line: 7
+    Info (332050): set_input_delay -clock {Clk} -min 2 [all_inputs] File: U:/ece385_lab9/lab9.sdc Line: 7
+Warning (332049): Ignored set_output_delay at lab9.sdc(10): Argument -clock is not an object ID File: U:/ece385_lab9/lab9.sdc Line: 10
+    Info (332050): set_output_delay -clock {Clk} 2 [all_outputs] File: U:/ece385_lab9/lab9.sdc Line: 10
+Warning (332060): Node: CLK was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register message[0] is being clocked by CLK
+Warning (332068): No clocks defined in design.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 236.03 mW
+Info: Quartus Prime PowerPlay Power Analyzer was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 836 megabytes
+    Info: Processing ended: Sat Apr 07 23:50:11 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
+
+

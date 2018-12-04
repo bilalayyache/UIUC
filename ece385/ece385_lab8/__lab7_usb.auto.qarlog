@@ -1,0 +1,50 @@
+Quartus Prime Archive log --	U:/ece385_lab8/__lab7_usb.auto.qarlog
+
+Archive:	U:/ece385_lab8/__lab7_usb.auto.qar
+Date:		Tue Apr 17 17:19:44 2018
+Quartus Prime		16.1.2 Build 203 01/18/2017 SJ Standard Edition
+
+	=========== Files Selected: ===========
+Color_Mapper.sv
+HexDriver.sv
+PLLJ_PLLSPE_INFO.txt
+U:/ece385_lab8/db/a_dpfifo_l011.tdf
+U:/ece385_lab8/db/a_dpfifo_q131.tdf
+U:/ece385_lab8/db/a_fefifo_7cf.tdf
+U:/ece385_lab8/db/altsyncram_4a31.tdf
+U:/ece385_lab8/db/altsyncram_6mc1.tdf
+U:/ece385_lab8/db/altsyncram_moc1.tdf
+U:/ece385_lab8/db/altsyncram_nio1.tdf
+U:/ece385_lab8/db/altsyncram_r1m1.tdf
+U:/ece385_lab8/db/cntr_1ob.tdf
+U:/ece385_lab8/db/cntr_do7.tdf
+U:/ece385_lab8/db/dpram_nl21.tdf
+U:/ece385_lab8/db/lab7_usb.cbx.xml
+U:/ece385_lab8/db/lab8.qpf
+U:/ece385_lab8/db/mult_p5t.tdf
+U:/ece385_lab8/db/scfifo_jr21.tdf
+U:/ece385_lab8/db/scfifo_kr21.tdf
+U:/ece385_lab8/db/vga_clk_altpll.v
+VGA_controller.sv
+__lab7_usb.auto.qarlog
+ball.sv
+c:/intelfpga/16.1/quartus/bin64/assignment_defaults.qdf
+hpi_io_intf.sv
+lab7_usb.flow.rpt
+lab7_usb.map.rpt
+lab7_usb.map.summary
+lab7_usb.qsf
+lab7_usb_assignment_defaults.qdf
+lab8.sdc
+lab8.sv
+lab8_assignment_defaults.qdf
+lab8_soc.qsys
+lab8_tmp_archive.qarlog
+mylog.txt
+vga_clk.ppf
+vga_clk.qip
+vga_clk.v
+	======= Total: 39 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

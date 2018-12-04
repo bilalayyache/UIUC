@@ -1,0 +1,9 @@
+module nzp
+		(	input logic[15:0]		IR, BUS_val,
+			input logic				LD_CC, LD_BEN,
+			output logic			BEN
+		);
+		
+		
+		
+endmodule

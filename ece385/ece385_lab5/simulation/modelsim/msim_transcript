@@ -1,0 +1,122 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do multiplier_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+U:/ece385_lab5 {U:/ece385_lab5/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:37 on Feb 15,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ece385_lab5" U:/ece385_lab5/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 15:03:37 on Feb 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ece385_lab5 {U:/ece385_lab5/register.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:38 on Feb 15,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ece385_lab5" U:/ece385_lab5/register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 15:03:38 on Feb 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ece385_lab5 {U:/ece385_lab5/adder.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:38 on Feb 15,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ece385_lab5" U:/ece385_lab5/adder.sv 
+# -- Compiling module adder_9bit
+# -- Compiling module OP_inverter
+# -- Compiling module four_bit_ra
+# -- Compiling module one_bit_ra
+# 
+# Top level modules:
+# 	adder_9bit
+# End time: 15:03:38 on Feb 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ece385_lab5 {U:/ece385_lab5/Control.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:38 on Feb 15,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ece385_lab5" U:/ece385_lab5/Control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 15:03:38 on Feb 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ece385_lab5 {U:/ece385_lab5/d_flipflop.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:38 on Feb 15,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ece385_lab5" U:/ece385_lab5/d_flipflop.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 15:03:39 on Feb 15,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ece385_lab5 {U:/ece385_lab5/multiplier_toplevel.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:39 on Feb 15,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ece385_lab5" U:/ece385_lab5/multiplier_toplevel.sv 
+# -- Compiling module multiplier_toplevel
+# 
+# Top level modules:
+# 	multiplier_toplevel
+# End time: 15:03:39 on Feb 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+U:/ece385_lab5 {U:/ece385_lab5/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:39 on Feb 15,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ece385_lab5" U:/ece385_lab5/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:03:39 on Feb 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -gui "+altera" -l msim_transcript -do "multiplier_run_msim_rtl_verilog.do" 
+# Start time: 15:03:39 on Feb 15,2018
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.multiplier_toplevel
+# Loading work.register
+# Loading work.adder_9bit
+# Loading work.OP_inverter
+# Loading work.four_bit_ra
+# Loading work.one_bit_ra
+# Loading work.D_FF
+# Loading work.control
+# Loading work.HexDriver
+# ** Warning: (vsim-3017) U:/ece385_lab5/adder.sv(30): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /testbench/multiplier/adder/FA3
+# ** Warning: (vsim-3722) U:/ece385_lab5/adder.sv(30): [TFMPC] - Missing connection for port 'cout'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: (vsim-8315) U:/ece385_lab5/Control.sv(31): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) U:/ece385_lab5/Control.sv(31): No condition is true in the unique/priority if/case statement.
+# 
+# Success!
+# End time: 15:15:21 on Feb 15,2018, Elapsed time: 0:11:42
+# Errors: 0, Warnings: 4

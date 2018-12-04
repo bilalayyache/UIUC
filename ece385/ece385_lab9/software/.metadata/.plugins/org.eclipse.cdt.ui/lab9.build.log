@@ -1,0 +1,11 @@
+20:32:07 **** Incremental Build of configuration Nios II for project lab9 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab9_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab9_bsp/
+[BSP build complete]
+[lab9 build complete]
+
+20:32:09 Build Finished (took 1s.787ms)
+

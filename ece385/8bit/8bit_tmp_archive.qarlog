@@ -1,0 +1,29 @@
+Quartus II Archive log --	U:/8bit/8bit_tmp_archive.qarlog
+
+Archive:	U:/8bit/8bit_tmp_archive.qar
+Date:		Thu Feb 08 15:50:21 2018
+Quartus II 64-Bit		15.0.2 Build 153 07/15/2015 SJ Full Version
+
+	=========== Files Selected: ===========
+U:/8bit/8bit.qpf
+U:/8bit/8bit.qsf
+U:/8bit/Control.sv
+U:/8bit/HexDriver.sv
+U:/8bit/Processor.sv
+U:/8bit/Reg_8.sv
+U:/8bit/Register_unit.sv
+U:/8bit/Router.sv
+U:/8bit/Synchronizers.sv
+U:/8bit/compute.sv
+U:/8bit/testbench_8.sv
+c:/altera/15.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Thu Feb 08 15:50:24 2018
+Source archive file:	U:/8bit/8bit_tmp_archive.qar
+Archive was extracted into	I:/ding33_yichi3/
+		 - successfully.

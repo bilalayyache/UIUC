@@ -1,0 +1,422 @@
+
+State Machine - |lab8|qmark:qmark13_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark12_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark11_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark10_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark9_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark8_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark7_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark6_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark5_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark4_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark3_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark2_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|qmark:qmark1_ins|state
+Name state.q1 state.q3 state.q2 
+state.q1 0 0 0 
+state.q2 1 0 1 
+state.q3 1 1 0 
+
+State Machine - |lab8|coin_total:coin_instance_13|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_13|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_12|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_12|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_11|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_11|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_10|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_10|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_9|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_9|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_8|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_8|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_7|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_7|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_6|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_6|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_5|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_5|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_4|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_4|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_3|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_3|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_2|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_2|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_1|coin_movement:coin_movement_instance|state
+Name state.disappear state.in_air state.jump state.start 
+state.start 0 0 0 0 
+state.jump 0 0 1 1 
+state.in_air 0 1 0 1 
+state.disappear 1 0 0 1 
+
+State Machine - |lab8|coin_total:coin_instance_1|coin_image:coin_image_ins|state
+Name state.c4 state.c3 state.c2 state.c1 
+state.c1 0 0 0 0 
+state.c2 0 0 1 1 
+state.c3 0 1 0 1 
+state.c4 1 0 0 1 
+
+State Machine - |lab8|Goomba:goomba_instance_5|Goomba_image:Goomba_image_instance|state
+Name state.none state.die state.right state.left 
+state.left 0 0 0 0 
+state.right 0 0 1 1 
+state.die 0 1 0 1 
+state.none 1 0 0 1 
+
+State Machine - |lab8|Goomba:goomba_instance_4|Goomba_image:Goomba_image_instance|state
+Name state.none state.die state.right state.left 
+state.left 0 0 0 0 
+state.right 0 0 1 1 
+state.die 0 1 0 1 
+state.none 1 0 0 1 
+
+State Machine - |lab8|Goomba:goomba_instance_3|Goomba_image:Goomba_image_instance|state
+Name state.none state.die state.right state.left 
+state.left 0 0 0 0 
+state.right 0 0 1 1 
+state.die 0 1 0 1 
+state.none 1 0 0 1 
+
+State Machine - |lab8|Goomba:goomba_instance_2|Goomba_image:Goomba_image_instance|state
+Name state.none state.die state.right state.left 
+state.left 0 0 0 0 
+state.right 0 0 1 1 
+state.die 0 1 0 1 
+state.none 1 0 0 1 
+
+State Machine - |lab8|Goomba:goomba_instance_1|Goomba_image:Goomba_image_instance|state
+Name state.none state.die state.right state.left 
+state.left 0 0 0 0 
+state.right 0 0 1 1 
+state.die 0 1 0 1 
+state.none 1 0 0 1 
+
+State Machine - |lab8|mario:mario_instance|mario_movement:mario_movement_instance|STATE
+Name STATE.DIE STATE.IN_AIR STATE.JUMP_1 STATE.RUN_3_L STATE.RUN_2_L STATE.RUN_1_L STATE.RUN_3_R STATE.RUN_2_R STATE.RUN_1_R STATE.RUN STATE.STAND 
+STATE.STAND 0 0 0 0 0 0 0 0 0 0 0 
+STATE.RUN 0 0 0 0 0 0 0 0 0 1 1 
+STATE.RUN_1_R 0 0 0 0 0 0 0 0 1 0 1 
+STATE.RUN_2_R 0 0 0 0 0 0 0 1 0 0 1 
+STATE.RUN_3_R 0 0 0 0 0 0 1 0 0 0 1 
+STATE.RUN_1_L 0 0 0 0 0 1 0 0 0 0 1 
+STATE.RUN_2_L 0 0 0 0 1 0 0 0 0 0 1 
+STATE.RUN_3_L 0 0 0 1 0 0 0 0 0 0 1 
+STATE.JUMP_1 0 0 1 0 0 0 0 0 0 0 1 
+STATE.IN_AIR 0 1 0 0 0 0 0 0 0 0 1 
+STATE.DIE 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |lab8|mario:mario_instance|mario_image:mario_image_instance|state
+Name state.die state.jump_l state.jump_r state.run_3_l state.run_2_l state.run_1_l state.stand_l state.run_3_r state.run_2_r state.run_1_r state.stand_r 
+state.stand_r 0 0 0 0 0 0 0 0 0 0 0 
+state.run_1_r 0 0 0 0 0 0 0 0 0 1 1 
+state.run_2_r 0 0 0 0 0 0 0 0 1 0 1 
+state.run_3_r 0 0 0 0 0 0 0 1 0 0 1 
+state.stand_l 0 0 0 0 0 0 1 0 0 0 1 
+state.run_1_l 0 0 0 0 0 1 0 0 0 0 1 
+state.run_2_l 0 0 0 0 1 0 0 0 0 0 1 
+state.run_3_l 0 0 0 1 0 0 0 0 0 0 1 
+state.jump_r 0 0 1 0 0 0 0 0 0 0 1 
+state.jump_l 0 1 0 0 0 0 0 0 0 0 1 
+state.die 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |lab8|game_controller:game_controller_instance|game_counter
+Name game_counter.0000 game_counter.0010 game_counter.0001 
+game_counter.0000 0 0 0 
+game_counter.0001 1 0 1 
+game_counter.0010 1 1 0 
+
+State Machine - |lab8|game_controller:game_controller_instance|state
+Name state.game_over state.win state.remain_1 state.remain_2 state.remain_3 state.game state.start 
+state.start 0 0 0 0 0 0 0 
+state.game 0 0 0 0 0 1 1 
+state.remain_3 0 0 0 0 1 0 1 
+state.remain_2 0 0 0 1 0 0 1 
+state.remain_1 0 0 1 0 0 0 1 
+state.win 0 1 0 0 0 0 1 
+state.game_over 1 0 0 0 0 0 1 
+
+State Machine - |lab8|audio_interface:audio|state
+Name state.b_end state.b_stop1 state.b_stop0 state.d_ack state.d7 state.d6 state.d5 state.d4 state.d3 state.d2 state.d1 state.d0 state.a_ack state.a7 state.a6 state.a5 state.a4 state.a3 state.a2 state.a1 state.a0 state.b_ack state.b7 state.b6 state.b5 state.b4 state.b3 state.b2 state.b1 state.b0 state.start state.initialize 
+state.initialize 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.b0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.b1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.b2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.b3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.b4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.b5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.b6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.b7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.b_ack 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.a0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.a1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.a2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.a3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.a4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.a5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.a6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.a7 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.a_ack 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d2 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d4 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d5 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d6 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d7 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.d_ack 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.b_stop0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.b_stop1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.b_end 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |lab8|audio_controller:audio_controller_module|state
+Name 
+state.Normal 
+
+State Machine - |lab8|nios_system:nios_system|lab8_soc_sdram:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|lab8_soc_sdram:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|lab8_soc_sdram:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|lab8_soc_sdram:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|lab8_soc_nios2_gen2_0:nios2_gen2_0|lab8_soc_nios2_gen2_0_cpu:cpu|lab8_soc_nios2_gen2_0_cpu_nios2_oci:the_lab8_soc_nios2_gen2_0_cpu_nios2_oci|lab8_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_lab8_soc_nios2_gen2_0_cpu_debug_slave_wrapper|lab8_soc_nios2_gen2_0_cpu_debug_slave_tck:the_lab8_soc_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

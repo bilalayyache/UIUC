@@ -1,0 +1,12 @@
+module control (
+	input	 logic CLK,
+	input  logic RESET,
+	input  logic AES_START,
+	output logic AES_DONE,
+	input  logic [127:0] AES_KEY,
+	input  logic [127:0] AES_MSG_ENC,
+	output logic [127:0] AES_MSG_DEC,
+	output logic Inv_MC_s1, Inv_MC_s0, msg_mux_s1, msg_mux_s0
+
+
+);

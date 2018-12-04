@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+// One bit adder.
+// Three input : x, y, cin. cin is the carry-in bit to the one bit full adder
+// Two output : s, cout. cout is the one bit carry-out bit
+module full_adder(input x,
+                  input y,
+                  input cin,
+                  output logic s,
+                  output logic cout
+                  );
+    assign s    = x^y^cin;
+    assign cout = (x&y)|(y&cin)|(cin&x);
+
+endmodule

@@ -1,0 +1,13 @@
+module pc_module
+
+		(	input	logic	[15:0]	pc_din1,
+										pc_din2,
+			input	logic				LDPC,
+			input	logic	[1:0]		PCMUX,
+			output logic [15:0]	PC
+		);
+
+		
+
+		
+endmodule

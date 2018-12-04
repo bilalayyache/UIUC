@@ -1,0 +1,12 @@
+{ "Info" "0" "" "qar.tcl version #3" {  } {  } 0 0 "qar.tcl version #3" 0 0 "0" 0 0 1518729376235 ""}
+{ "Info" "0" "" "Including '-use_file_set basic' by default" {  } {  } 0 0 "Including '-use_file_set basic' by default" 0 0 "0" 0 0 1518729376547 ""}
+{ "Info" "0" "" "All project revisions will be stored in common archive multiplier_tmp_archive.qar" {  } {  } 0 0 "All project revisions will be stored in common archive multiplier_tmp_archive.qar" 0 0 "0" 0 0 1518729376547 ""}
+{ "Info" "0" "" "Initializing files for 'multiplier' revision" {  } {  } 0 0 "Initializing files for 'multiplier' revision" 0 0 "0" 0 0 1518729376656 ""}
+{ "Info" "0" "" "File Set 'Source control' contains:" { { "Info" "0" "" "Project source and settings files" {  } {  } 0 0 "Project source and settings files" 0 0 "0" 0 0 1518729376671 ""} { "Info" "0" "" "Automatically detected source files" {  } {  } 0 0 "Automatically detected source files" 0 0 "0" 0 0 1518729376671 ""}  } {  } 0 0 "File Set 'Source control' contains:" 0 0 "0" 0 0 1518729376671 ""}
+{ "Info" "0" "" "Archive will store files relative to the closest common parent directory" {  } {  } 0 0 "Archive will store files relative to the closest common parent directory" 0 0 "0" 0 0 1518729377639 ""}
+{ "Info" "IPRJ_ARC_TCL_TCL_USING_COMMON_DIR" "U:/ece385_lab5/ " "Using common directory U:/ece385_lab5/" {  } {  } 0 13213 "Using common directory %1!s!" 0 0 "Quartus II" 0 -1 1518729377701 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1518729377841 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1518729377841 ""}
+{ "Info" "0" "" "Generated archive 'multiplier_tmp_archive.qar'" {  } {  } 0 0 "Generated archive 'multiplier_tmp_archive.qar'" 0 0 "0" 0 0 1518729377841 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1518729377841 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1518729377841 ""}

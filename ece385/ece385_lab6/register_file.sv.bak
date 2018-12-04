@@ -1,0 +1,14 @@
+module register_file
+			(	input logic	[15:0] 	data_in,
+				input	logic	[2:0]		DR, IR2,
+				input	logic 			
+			
+			
+			
+			
+			
+			
+			);
+
+
+endmodule

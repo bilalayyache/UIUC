@@ -1,0 +1,4 @@
+module keycode_reader(
+								input [15:0] keycode,
+								output logic w_on, a_on, s_on, d_on
+							);

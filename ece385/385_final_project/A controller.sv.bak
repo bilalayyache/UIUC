@@ -1,0 +1,112 @@
+
+
+module  audio_controller ( output [15:0]  LDATA, RDATA,
+									output			Init, 
+									input				Init_Finish, Reset, Clk, data_over,
+									input 			frame_clk
+								  );   
+    parameter [9:0] d1 = 7'd45;
+	 parameter [9:0] d2 = 7'd50;
+	 parameter [9:0] d3 = 7'd55;
+	 parameter [9:0] d4 = 7'd59;
+	 parameter [9:0] d5 = 7'd66;
+	 parameter [9:0] d6 = 7'd73;
+	 parameter [9:0] d7 = 7'd83;
+	 parameter [9:0] dx = 7'd00;
+	 
+int duration, counter;
+enum logic [1:0] {Normal} state,next_state;
+
+logic [31:0][6:0] BGM; 
+assign BGM[0][6:0] = d3;//d3;
+assign BGM[1][6:0] = d3;//d3;
+assign BGM[2][6:0] = d4;//d4;
+assign BGM[3][6:0] = d5;//d5;
+assign BGM[4][6:0] = d5;//d5;
+assign BGM[5][6:0] = d4;//d4;
+assign BGM[6][6:0] = d3;//d3;
+assign BGM[7][6:0] = d2;
+assign BGM[8][6:0] = d1;
+assign BGM[9][6:0] = d1;
+assign BGM[10][6:0] = d2;
+assign BGM[11][6:0] = d3;
+assign BGM[12][6:0] = d3;
+assign BGM[13][6:0] = d2;
+assign BGM[14][6:0] = d2;
+assign BGM[15][6:0] = d3;
+assign BGM[16][6:0] = d3;
+assign BGM[17][6:0] = d4;
+assign BGM[18][6:0] = d5;
+assign BGM[19][6:0] = d5;
+assign BGM[20][6:0] = d4;
+assign BGM[21][6:0] = d3;
+assign BGM[22][6:0] = d2;
+assign BGM[23][6:0] = d1;
+assign BGM[24][6:0] = d1;
+assign BGM[25][6:0] = d2;
+assign BGM[26][6:0] = d3;
+assign BGM[27][6:0] = d2;
+assign BGM[28][6:0] = d1;
+assign BGM[29][6:0] = d1;
+assign BGM[30][6:0] = dx;
+assign BGM[31][6:0] = dx;
+always_comb
+	begin	
+	unique case(state)
+		Normal:
+		begin
+		next_state<=Normal;
+		end
+	endcase
+end	
+	
+
+always_ff @ (posedge Clk or posedge Reset)
+	begin
+		if ( Reset ) 
+			begin 
+				LDATA <= 16'hFFFF;
+				RDATA <= 16'hFFFF;
+				Init  <= 1'b1;
+				counter <= 1;
+				duration <= 0;
+				state<= Normal;
+			end
+		else
+			begin
+	
+		state <= next_state;
+
+			if(Init_Finish)
+				begin
+					duration <= duration + 1;
+					if(data_over)
+					begin
+						RDATA <= RDATA + BGM[counter][6:0];
+					end
+					else//DO
+					begin
+						Init <= 1'b0;
+						LDATA <= LDATA;
+						if(counter < 32)
+						begin
+							counter <= counter + duration/100000;
+							duration <= duration%100000;
+						end
+						else
+						begin
+							counter <= 0;
+						end					
+					end
+				end
+				else//IF
+				begin
+					Init <= Init;
+					LDATA <= LDATA;
+					RDATA <= RDATA;
+				end
+			end
+		
+	end
+
+endmodule

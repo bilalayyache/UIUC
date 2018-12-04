@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kathe/Desktop/FINALSTART/simulation/modelsim
+vBoy_Girl_Bomb
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 !s110 1512080723
+!i10b 1
+!s100 :;i;g?EOje:0Lo:BcIBPI1
+In_H61ze:GzcUD]_zCTbiM1
+Z3 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 Boy_Girl_Bomb_sv_unit
+S1
+R0
+w1512080215
+8C:/Users/kathe/Desktop/FINALSTART/Boy_Girl_Bomb.sv
+FC:/Users/kathe/Desktop/FINALSTART/Boy_Girl_Bomb.sv
+L0 2
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1512080723.695000
+!s107 C:/Users/kathe/Desktop/FINALSTART/Boy_Girl_Bomb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kathe/Desktop/FINALSTART|C:/Users/kathe/Desktop/FINALSTART/Boy_Girl_Bomb.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/kathe/Desktop/FINALSTART
+n@boy_@girl_@bomb
+vmap_array
+R1
+R2
+!i10b 1
+!s100 ?8=WC1jM5NER6>^SW:G>W1
+I67JN]m_?5QS0<fUbRK3f51
+R3
+!s105 map_array_sv_unit
+S1
+R0
+w1511931923
+8C:/Users/kathe/Desktop/FINALSTART/map_array.sv
+FC:/Users/kathe/Desktop/FINALSTART/map_array.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1512080723.826000
+!s107 C:/Users/kathe/Desktop/FINALSTART/map_array.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kathe/Desktop/FINALSTART|C:/Users/kathe/Desktop/FINALSTART/map_array.sv|
+!i113 1
+R5
+R6

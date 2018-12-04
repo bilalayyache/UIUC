@@ -1,0 +1,20 @@
+module mux4
+		#(parameter width = 16)
+		(	input		logic[width-1 : 0] d0, d1, d2, d3,
+			input		logic s0, s1,
+			output	logic[width-1 : 0] y
+		);
+		
+
+		always_comb begin
+			if (~s1 && ~s0)
+				y = d0;
+			else if (~s1 && S0)
+				y = d1;
+			else if (s1 && ~s0)
+				y = d2;
+			else
+				y = d3;
+		end
+		
+endmodule

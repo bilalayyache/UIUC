@@ -1,0 +1,1681 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kathe/Desktop/ECE385/simulation/modelsim
+valtera_avalon_sc_fifo
+Z1 !s110 1512080721
+!i10b 1
+!s100 2@;YleiQS51@UMb7^^WbN1
+IbLl7ffE9N3c@PzKdEA:4b0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 dC:/Users/kathe/Desktop/FINALSTART/simulation/modelsim
+Z4 w1511927083
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Z5 L0 21
+Z6 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1512080721.355000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+Z7 o-vlog01compat -work nios_system
+Z8 !s92 -vlog01compat -work nios_system +incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules
+valtera_avalon_st_clock_crosser
+Z9 !s110 1509674182
+!i10b 1
+!s100 _kMN<BJ0mkgSFXTW`85Bh2
+I2S>>>]0_EQ6Gig>5@HFTO3
+R2
+R0
+Z10 w1509671388
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_clock_crosser.v
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_clock_crosser.v
+L0 22
+R6
+r1
+!s85 0
+31
+!s108 1509674182.918000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!i113 1
+R7
+Z11 !s92 -vlog01compat -work nios_system +incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules
+valtera_avalon_st_handshake_clock_crosser
+R9
+!i10b 1
+!s100 <TeLS^R[XXnBHVSJ0:LXK0
+I[ZK2B4TPk6@?o?];Chmmg2
+R2
+R0
+R10
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+Z12 L0 24
+R6
+r1
+!s85 0
+31
+!s108 1509674182.818000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!i113 1
+R7
+R11
+valtera_merlin_arb_adder
+Z13 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z14 !s110 1509674183
+!i10b 1
+!s100 K`mj4ab`UI=f=Bzd]0FbK0
+IjheC?;^hFHU]<N8OdcgYn0
+R2
+Z15 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R10
+Z16 8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Z17 FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+L0 228
+R6
+r1
+!s85 0
+31
+Z18 !s108 1509674183.019000
+Z19 !s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+Z21 o-sv -work nios_system
+Z22 !s92 -sv -work nios_system +incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules
+valtera_merlin_arbitrator
+R13
+R14
+!i10b 1
+!s100 Ni=FjEDhlN5HaJIeO8C?D0
+ICf4HPA2S9?E]ZJmPGRcP[0
+R2
+R15
+S1
+R0
+R10
+R16
+R17
+L0 103
+R6
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R21
+R22
+valtera_merlin_burst_uncompressor
+R13
+Z23 !s110 1509674184
+!i10b 1
+!s100 GURQ=I3dUngBFBEkGhKmh3
+I__hQ^GN@W7:74LofnXASG3
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R10
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R6
+r1
+!s85 0
+31
+!s108 1509674184.706000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R21
+R22
+valtera_merlin_master_agent
+R13
+R23
+!i10b 1
+!s100 ;96Rc=znn;@WbB0jWGRRl1
+IV4jOg;n4k[K7_d;5jd_nP0
+R2
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R10
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_agent.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R6
+r1
+!s85 0
+31
+!s108 1509674184.806000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_agent.sv|
+!i113 1
+R21
+R22
+valtera_merlin_master_translator
+R13
+!s110 1509674185
+!i10b 1
+!s100 6[_D]96gi`8O488PiFWUc1
+IobAI@Q2_bVFGBnnb^@U203
+R2
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R10
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_translator.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_translator.sv
+L0 30
+R6
+r1
+!s85 0
+31
+!s108 1509674185.037000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_master_translator.sv|
+!i113 1
+R21
+R22
+valtera_merlin_slave_agent
+R13
+R23
+!i10b 1
+!s100 3LfTAj;bB3aAXgCgCn_bT3
+IYzIZbcQzKj]Zm2B:IKA??0
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R10
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv
+L0 34
+R6
+r1
+!s85 0
+31
+!s108 1509674184.537000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R21
+R22
+valtera_merlin_slave_translator
+R13
+R23
+!i10b 1
+!s100 dTa]H8`_eei9>oMl>o5z71
+IK5:?PT=XETQWcjc_Zc3AX2
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R10
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R6
+r1
+!s85 0
+31
+!s108 1509674184.921000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R21
+R22
+valtera_reset_controller
+Z24 !s110 1512080720
+!i10b 1
+!s100 VEhLaE^KT@RiagZkfkKI93
+IXlEJn::L^cbJ]Md2O]e1a3
+R2
+R3
+Z25 w1511927077
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_controller.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_controller.v
+L0 42
+R6
+r1
+!s85 0
+31
+!s108 1512080720.871000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+R7
+R8
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 UTD:?4E=?>;X@do<;V;hQ1
+I6QiblQi3V_AX_J:OkYPzT1
+R2
+R3
+R25
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_synchronizer.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_synchronizer.v
+R12
+R6
+r1
+!s85 0
+31
+!s108 1512080720.986000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+vnios_system
+R24
+!i10b 1
+!s100 BiGHJN59olIomEdbdDkO_1
+I_Fo?fc646fnTMFmOI3i5h2
+R2
+R3
+w1511927062
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/nios_system.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/nios_system.v
+L0 6
+R6
+r1
+!s85 0
+31
+!s108 1512080720.670000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/nios_system.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/nios_system.v|
+!i113 1
+R7
+!s92 -vlog01compat -work nios_system +incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis
+vnios_system_irq_mapper
+R13
+R9
+!i10b 1
+!s100 ML8iMjDBX<PiUF2V1ioHP0
+I9iJ?zN?AY5[9GjO5a08VA0
+R2
+!s105 nios_system_irq_mapper_sv_unit
+S1
+R0
+R10
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_irq_mapper.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_irq_mapper.sv
+L0 31
+R6
+r1
+!s85 0
+31
+!s108 1509674182.587000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_irq_mapper.sv|
+!i113 1
+R21
+R22
+vnios_system_jtag_uart_0
+Z26 !s110 1512080723
+!i10b 1
+!s100 :MmM:0liXENO<Q^IUn]oh3
+IX21_:CeAV6Yj2BC=:ofR_3
+R2
+R3
+Z27 w1511927064
+Z28 8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v
+Z29 FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v
+L0 327
+R6
+r1
+!s85 0
+31
+Z30 !s108 1512080723.594000
+Z31 !s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v|
+Z32 !s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v|
+!i113 1
+R7
+R8
+vnios_system_jtag_uart_0_scfifo_r
+R26
+!i10b 1
+!s100 gXO9dTSOCmgV4Wb<09CVT0
+IVb4I3T]C7c2OfdWMM?T`<3
+R2
+R3
+R27
+R28
+R29
+L0 240
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R7
+R8
+vnios_system_jtag_uart_0_scfifo_w
+R26
+!i10b 1
+!s100 ;ji9i5zOlD>aj4S7R=57E3
+IQ26ZW1S2M8bKi3WAg8AmO2
+R2
+R3
+R27
+R28
+R29
+L0 77
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R7
+R8
+vnios_system_jtag_uart_0_sim_scfifo_r
+R26
+!i10b 1
+!s100 V;:bhJWmeiWSzYG>kF<HX2
+IJYAP;9mK2bWhOL3oH2^mE1
+R2
+R3
+R27
+R28
+R29
+L0 162
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R7
+R8
+vnios_system_jtag_uart_0_sim_scfifo_w
+R26
+!i10b 1
+!s100 O?7hL]]l>bOaFz[D84m]m2
+IXDmeB06:0jn03=4gPCSbk2
+R2
+R3
+R27
+R28
+R29
+R5
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R7
+R8
+vnios_system_keycode
+R26
+!i10b 1
+!s100 NMLBlO[7i:V`V29gc@>5=0
+ICfdm`?<o>f<Ib>33VciY[1
+R2
+R3
+R27
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_keycode.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_keycode.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080723.510000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_keycode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_keycode.v|
+!i113 1
+R7
+R8
+vnios_system_mm_interconnect_0
+R1
+!i10b 1
+!s100 QD3m3dKZiVY]i?_EJX3NM2
+IE3Nlf=gbgTSBOP_Ginj]V3
+R2
+R3
+R25
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1512080721.086000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v|
+!i113 1
+R7
+R8
+vnios_system_mm_interconnect_0_avalon_st_adapter
+R1
+!i10b 1
+!s100 bB`0U][J6Ta7W15AOY]kI0
+Iz8M@;@5W`7goVUR:I<W@L0
+R2
+R3
+w1511927085
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1512080721.256000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R7
+R8
+vnios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R13
+R9
+!i10b 1
+!s100 b5MC7IN[92h@f=T203cnn2
+IhMa[5:ozPc_KVT;6:OMKF0
+R2
+!s105 nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+Z33 w1509671389
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+L0 66
+R6
+r1
+!s85 0
+31
+!s108 1509674182.702000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_cmd_demux
+R13
+R14
+!i10b 1
+!s100 kl;`6UWB2lA@0[RKH[NB93
+Ilm`Z<;HaTMMXLXaTCz15H3
+R2
+!s105 nios_system_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv
+Z34 L0 43
+R6
+r1
+!s85 0
+31
+!s108 1509674183.851000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_cmd_demux_001
+R13
+R14
+!i10b 1
+!s100 cdB`BLSeB>E[e6M<Q;F:13
+I4naZjm>>ahA^LcQ_4JhAI1
+R2
+!s105 nios_system_mm_interconnect_0_cmd_demux_001_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv
+R34
+R6
+r1
+!s85 0
+31
+!s108 1509674183.735000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_cmd_mux
+R13
+R14
+!i10b 1
+!s100 f@AD3?o1SDWA6T50UM2kE2
+Ijj=d7EQIIoO6584TEPnZQ0
+R2
+!s105 nios_system_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv
+Z35 L0 51
+R6
+r1
+!s85 0
+31
+!s108 1509674183.635000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_cmd_mux_001
+R13
+R14
+!i10b 1
+!s100 Q5^fT352Ez4N>h3:mE9h33
+I;BXf1c1Q3UHj>X]X`^@J]3
+R2
+!s105 nios_system_mm_interconnect_0_cmd_mux_001_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv
+R35
+R6
+r1
+!s85 0
+31
+!s108 1509674183.519000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router
+R13
+R23
+!i10b 1
+!s100 iK`Ue^D^`fkh?H6WzQT0]3
+IZYY9CE5VhVRgW[`F;9njY2
+R2
+Z36 !s105 nios_system_mm_interconnect_0_router_sv_unit
+S1
+R0
+R33
+Z37 8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv
+Z38 FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv
+Z39 L0 84
+R6
+r1
+!s85 0
+31
+Z40 !s108 1509674184.421000
+Z41 !s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv|
+Z42 !s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router_001
+R13
+R23
+!i10b 1
+!s100 jeIVI_RI1cKL?oGQeCYlN3
+InaOJU@z2CIC95FnBnEami1
+R2
+Z43 !s105 nios_system_mm_interconnect_0_router_001_sv_unit
+S1
+R0
+R33
+Z44 8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv
+Z45 FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv
+R39
+R6
+r1
+!s85 0
+31
+Z46 !s108 1509674184.305000
+Z47 !s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv|
+Z48 !s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router_001_default_decode
+R13
+R23
+!i10b 1
+!s100 i1l;`G3g:7UM=zH:EVQ803
+IjAGK8G49l<D^=SL?`[nhb0
+R2
+R43
+S1
+R0
+R33
+R44
+R45
+Z49 L0 45
+R6
+r1
+!s85 0
+31
+R46
+R47
+R48
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router_002
+R13
+R23
+!i10b 1
+!s100 k9J<YaVEQKDcEY`gb<V6J1
+IC64m30ScIiSGM`bTW;=EO3
+R2
+Z50 !s105 nios_system_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R33
+Z51 8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv
+Z52 FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv
+R39
+R6
+r1
+!s85 0
+31
+Z53 !s108 1509674184.174000
+Z54 !s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv|
+Z55 !s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router_002_default_decode
+R13
+R23
+!i10b 1
+!s100 [=;YgoF6d]gaCk>H2HA1L2
+IeMBEIm_agU8laW_6Rj`Bf1
+R2
+R50
+S1
+R0
+R33
+R51
+R52
+R49
+R6
+r1
+!s85 0
+31
+R53
+R54
+R55
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router_003
+R13
+R23
+!i10b 1
+!s100 U1T_F3zWWVJAY2ge6DWK[2
+ITm@FbZ?hlXWgi0BY9[4d13
+R2
+Z56 !s105 nios_system_mm_interconnect_0_router_003_sv_unit
+S1
+R0
+R33
+Z57 8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv
+Z58 FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv
+R39
+R6
+r1
+!s85 0
+31
+Z59 !s108 1509674184.021000
+Z60 !s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv|
+Z61 !s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router_003_default_decode
+R13
+R23
+!i10b 1
+!s100 >=_8<0`W_VgJ>RZc1Bd?X1
+If@PPDDW^L]XKHOnPYIBQU2
+R2
+R56
+S1
+R0
+R33
+R57
+R58
+R49
+R6
+r1
+!s85 0
+31
+R59
+R60
+R61
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_router_default_decode
+R13
+R23
+!i10b 1
+!s100 5<PkmA1SbM?l?ce=U=LBG0
+I?4UD[B6`dYDCo[7EJJJ:E1
+R2
+R36
+S1
+R0
+R33
+R37
+R38
+R49
+R6
+r1
+!s85 0
+31
+R40
+R41
+R42
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_rsp_demux
+R13
+R14
+!i10b 1
+!s100 186U1cE_8Xb9=fOA:QHBT0
+ILGgCcX_kf0<`gUDb=iO4C3
+R2
+!s105 nios_system_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv
+R34
+R6
+r1
+!s85 0
+31
+!s108 1509674183.420000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_rsp_demux_001
+R13
+R14
+!i10b 1
+!s100 9CGY01@Y6`b52zY?GTfe>1
+I94^gS`BJ3X1BX^1GeQU1B2
+R2
+!s105 nios_system_mm_interconnect_0_rsp_demux_001_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv
+R34
+R6
+r1
+!s85 0
+31
+!s108 1509674183.334000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_rsp_mux
+R13
+R14
+!i10b 1
+!s100 6e?eF[W:JRS3offcSGfL^2
+I35aTm<QYZZ=?cndA=HVNT2
+R2
+!s105 nios_system_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv
+R35
+R6
+r1
+!s85 0
+31
+!s108 1509674183.223000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R21
+R22
+vnios_system_mm_interconnect_0_rsp_mux_001
+R13
+R14
+!i10b 1
+!s100 ZVM?dNNF;]je7:3S2Gb5R0
+IZD14;C0VG5f[5LKdK<9OO1
+R2
+!s105 nios_system_mm_interconnect_0_rsp_mux_001_sv_unit
+S1
+R0
+R33
+8C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv
+FC:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv
+R35
+R6
+r1
+!s85 0
+31
+!s108 1509674183.119000
+!s107 C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|nios_system|+incdir+C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv|
+!i113 1
+R21
+R22
+vnios_system_nios2_qsys_0
+Z62 !s110 1512080722
+!i10b 1
+!s100 OfDdZ4_691i^KC8[=R2e13
+IcGE<RDGfG0e8HbPaW[Qe03
+R2
+R3
+Z63 w1511927065
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1512080722.740000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v|
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu
+R62
+!i10b 1
+!s100 E_B?0QeBN:gFX:BWfk;[?1
+I<Mi@]cYM8;nTBEj3AMCZ>2
+R2
+R3
+R4
+Z64 8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v
+Z65 FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v
+L0 2981
+R6
+r1
+!s85 0
+31
+Z66 !s108 1512080722.839000
+Z67 !s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v|
+Z68 !s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v|
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+R26
+!i10b 1
+!s100 R;HXW`FJC4<@liih@P7IM3
+ID]3J7o<_cXM?a?BXFzK780
+R2
+R3
+R4
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080723.062000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v|
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_debug_slave_tck
+R26
+!i10b 1
+!s100 2zcCA[gE2@diU5nUVkY=R2
+IPgmBfSgfT8;S19fmH79g53
+R2
+R3
+R4
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080723.209000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v|
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+R26
+!i10b 1
+!s100 7lEZaEMaiG^G:Y`@ZCKZF1
+IBIDLB_mFe?F7DUPK?bE8=2
+R2
+R3
+R4
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080723.310000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v|
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_avalon_reg
+R62
+!i10b 1
+!s100 oUA];`nYTHGm;GW^AVA0o1
+Ig7_XlVm]YSVMIcZ@HHzJ<2
+R2
+R3
+R4
+R64
+R65
+L0 2177
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci
+R62
+!i10b 1
+!s100 cSP5Nn>dYfD?ELR;]HlYW3
+IDETU2BTf8K]Zj7@[>0Ddc2
+R2
+R3
+R4
+R64
+R65
+L0 2510
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_break
+R62
+!i10b 1
+!s100 CcccK0lV2RMSkLa4mz0;O0
+IF9KKjE`FV<jl^Q[1E;ClP0
+R2
+R3
+R4
+R64
+R65
+L0 292
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+R62
+!i10b 1
+!s100 Jom33VTUFNX>OzIc;AKOS1
+Ibon2P3A1jKlLXSdf0SMK43
+R2
+R3
+R4
+R64
+R65
+L0 1426
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_dbrk
+R62
+!i10b 1
+!s100 Hib?^Tz:GZiY@6_:f6Xzc0
+I3Q_lc2IlUjTNE?b]<JdbH0
+R2
+R3
+R4
+R64
+R65
+L0 790
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_debug
+R62
+!i10b 1
+!s100 XK<`6DDHY9VB[:N3HXgiD1
+IZoM1_3GT96ARb1A`<C=O70
+R2
+R3
+R4
+R64
+R65
+L0 151
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_dtrace
+R62
+!i10b 1
+!s100 SgOVRi==dOKO82U6_U0C:2
+I5Pf`TAVK<Jk>1:KlPCchT3
+R2
+R3
+R4
+R64
+R65
+L0 1345
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_fifo
+R62
+!i10b 1
+!s100 5fQ]]7oVBA:?jERJgZjRM3
+IGM8:U@??B241hM^JeFbb43
+R2
+R3
+R4
+R64
+R65
+L0 1585
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+R62
+!i10b 1
+!s100 <[4R2J:oVbER`b[HQ36Qe2
+IGX]g^igbonI;WfW6GKGnF1
+R2
+R3
+R4
+R64
+R65
+L0 1539
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+R62
+!i10b 1
+!s100 n1h=Og9N9]E^9_[5AXHY]0
+I9a0TPI]j93d17^dJdI95U2
+R2
+R3
+R4
+R64
+R65
+L0 1497
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_im
+R62
+!i10b 1
+!s100 z2BFPJ3<ioffXS^IRmFPF3
+I34<@;VUjKgDN60mQb61IS3
+R2
+R3
+R4
+R64
+R65
+L0 2092
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+R62
+!i10b 1
+!s100 Ud<IEdKDDO1MMQa8YlHz31
+I0kGUMF0?z9_T15KoMn7EQ0
+R2
+R3
+R4
+R64
+R65
+L0 976
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_pib
+R62
+!i10b 1
+!s100 VCBDjChcLl>iHB@DoLAS^2
+I>UGE6S@@[=9NO@i@?WEeQ0
+R2
+R3
+R4
+R64
+R65
+L0 2070
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_td_mode
+R62
+!i10b 1
+!s100 XTA0jdoMH_JkI11BLf04^3
+ICL;`TlCS8^^F>ZjB0SCk72
+R2
+R3
+R4
+R64
+R65
+L0 1278
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_oci_xbrk
+R62
+!i10b 1
+!s100 AI@gTjN5L[Lb9I2D[LfjK1
+I0k?4NaFF?8UYE@cQP]j[b1
+R2
+R3
+R4
+R64
+R65
+L0 584
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_ocimem
+R62
+!i10b 1
+!s100 Kaa]l`iC[5YWX_I=`@CIW2
+I^K9f<ze^iA1:m5JDoVI2?3
+R2
+R3
+R4
+R64
+R65
+L0 2332
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_nios2_performance_monitors
+R62
+!i10b 1
+!s100 Gel=A_e0XGD<1ncj3^g@P2
+I4Mh@PY??=DjCoVAO1CT<h1
+R2
+R3
+R4
+R64
+R65
+L0 2161
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_ociram_sp_ram_module
+R62
+!i10b 1
+!s100 3a@Jbn@E=P`z9Pf?h71JM3
+IDGY`K;A1U6Z<IGBec[`NI0
+R2
+R3
+R4
+R64
+R65
+L0 2269
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_register_bank_a_module
+R62
+!i10b 1
+!s100 ;7m8bUN<f7;Zig@z9NNSl2
+ICYbHm8^YYBdWK5oO<cNCk2
+R2
+R3
+R4
+R64
+R65
+R5
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_register_bank_b_module
+R62
+!i10b 1
+!s100 UF8Fk9m1D?;@gdjfzzi0h0
+IW`^7NmQI8Yc7W6SdPzSHF0
+R2
+R3
+R4
+R64
+R65
+L0 86
+R6
+r1
+!s85 0
+31
+R66
+R67
+R68
+!i113 1
+R7
+R8
+vnios_system_nios2_qsys_0_cpu_test_bench
+R26
+!i10b 1
+!s100 O0@U4HMB8TagiR1F:R6mb1
+IVkTMh1H;faA=iXSJln71_1
+R2
+R3
+R4
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080723.410000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v|
+!i113 1
+R7
+R8
+vnios_system_onchip_memory2_0
+R62
+!i10b 1
+!s100 4PCj?YoC^C?E<E^b72]Y_2
+Ie=Ki5BfNJDziafJWam01G3
+R2
+R3
+R63
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080722.639000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v|
+!i113 1
+R7
+R8
+vnios_system_otg_hpi_address
+R62
+!i10b 1
+!s100 cWVDfmAU1LozeX<8a:YGS2
+I9V<_0D2T6`G1`IYKRNJ1>0
+R2
+R3
+R63
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_address.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_address.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080721.988000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_address.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_address.v|
+!i113 1
+R7
+R8
+vnios_system_otg_hpi_cs
+R1
+!i10b 1
+!s100 Ma[RJe=eD4K4a@0j23K__2
+IbWni`4h0@5YQZFGMC]BF[3
+R2
+R3
+Z69 w1511927066
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_cs.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_cs.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080721.887000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_cs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_cs.v|
+!i113 1
+R7
+R8
+vnios_system_otg_hpi_data
+R1
+!i10b 1
+!s100 ^`FVFDMa]9g62RdP`7^g:0
+IM]Dc@Sk1bVgCJa5SJGQ8l1
+R2
+R3
+R69
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_data.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_data.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080721.803000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_otg_hpi_data.v|
+!i113 1
+R7
+R8
+vnios_system_sdram
+R1
+!i10b 1
+!s100 435<UPL7zbobFkJVe8Y5>1
+IQfOjZd?`=CZ>E1i;P38jL1
+R2
+R3
+Z70 w1511927067
+Z71 8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram.v
+Z72 FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram.v
+L0 158
+R6
+r1
+!s85 0
+31
+Z73 !s108 1512080721.703000
+Z74 !s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram.v|
+Z75 !s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram.v|
+!i113 1
+R7
+R8
+vnios_system_sdram_input_efifo_module
+R1
+!i10b 1
+!s100 `4U:gH>zF5PR=6ZNAM;of1
+IoS_DQA3A7NeV_bQ>]>HL41
+R2
+R3
+R70
+R71
+R72
+R5
+R6
+r1
+!s85 0
+31
+R73
+R74
+R75
+!i113 1
+R7
+R8
+vnios_system_sdram_pll
+R1
+!i10b 1
+!s100 T[FE[obTmG?PzU3TS=2AD1
+I8mT_4h?GC^bXV4l;4kDTj0
+R2
+R3
+Z76 w1511927069
+Z77 8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram_pll.v
+Z78 FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram_pll.v
+L0 218
+R6
+r1
+!s85 0
+31
+Z79 !s108 1512080721.587000
+Z80 !s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram_pll.v|
+Z81 !s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sdram_pll.v|
+!i113 1
+R7
+R8
+vnios_system_sdram_pll_altpll_lqa2
+R1
+!i10b 1
+!s100 ^STn66kl3A_3`>k^;zA=_0
+I89jX=nLzhlSoz7bHB:5DR1
+R2
+R3
+R76
+R77
+R78
+L0 131
+R6
+r1
+!s85 0
+31
+R79
+R80
+R81
+!i113 1
+R7
+R8
+vnios_system_sdram_pll_dffpipe_l2c
+R1
+!i10b 1
+!s100 elWh6@kIZm@nImFLZLo1<2
+IL2f0ee^C^;`fKLLOoTRS72
+R2
+R3
+R76
+R77
+R78
+L0 38
+R6
+r1
+!s85 0
+31
+R79
+R80
+R81
+!i113 1
+R7
+R8
+vnios_system_sdram_pll_stdsync_sv6
+R1
+!i10b 1
+!s100 h?gUGNi8f=H5NC4YTaSd83
+IQ^EH12K_VCSXET2SAoeNV1
+R2
+R3
+R76
+R77
+R78
+L0 99
+R6
+r1
+!s85 0
+31
+R79
+R80
+R81
+!i113 1
+R7
+R8
+vnios_system_sysid_qsys_0
+R1
+!i10b 1
+!s100 DiU`[ziXU2AW0>_[Ra>J?1
+IO3GHFYl4XCogf:G[WlQzN0
+R2
+R3
+R76
+8C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v
+FC:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v
+R5
+R6
+r1
+!s85 0
+31
+!s108 1512080721.503000
+!s107 C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|nios_system|+incdir+C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules|C:/Users/kathe/Desktop/FINALSTART/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v|
+!i113 1
+R7
+R8

@@ -1,0 +1,28 @@
+module BACKGROUND
+
+
+
+
+endmodule
+
+
+
+module Cloud (input [12:0]   DrawX, DrawY,       // Current pixel coordinates
+				  input [12:0]	  process,
+				  output logic  is_Mario,            // Whether current pixel belongs to Mario or background);
+
+
+
+	 always_comb begin
+        if ( Mario_X_Pos <= process + DrawX && DrawX + process < Mario_X_Pos +13'd32 && DrawY >= Mario_Y_Pos && DrawY < Mario_Y_Pos + 13'd32) 
+            is_Mario = 1'b1;
+        else
+            is_Mario = 1'b0;
+        /* The Mario's (pixelated) circle is generated using the standard circle formula.  Note that while 
+           the single line is quite powerful descriptively, it causes the synthesis tool to use up three
+           of the 12 available multipliers on the chip! */
+    end
+
+
+
+endmodule

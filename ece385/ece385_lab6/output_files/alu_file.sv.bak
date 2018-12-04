@@ -1,0 +1,11 @@
+module alu_unit
+			(	input	logic[15:0] regA,
+				input logic[15:0]	regB,
+				input	logic[1:0]	ALUK,
+				
+							
+							
+							
+							
+							
+							);

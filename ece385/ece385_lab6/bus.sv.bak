@@ -1,0 +1,27 @@
+module bus
+				(	input		logic[15 : 0]	MDR,
+													ALU,
+													PC,
+													MARMUX,
+													ILLIGAL,
+					input		logic				GateMDR,
+													GatePC,
+													GateALU,
+													GateMARMUX,
+					output	logic[15 : 0]	OUTPUT
+				);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule

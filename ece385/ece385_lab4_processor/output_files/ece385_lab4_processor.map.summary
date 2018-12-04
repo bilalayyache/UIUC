@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Feb 08 14:00:54 2018
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
+Revision Name : ece385_lab4_processor
+Top-level Entity Name : Processor
+Family : Cyclone IV E
+Total logic elements : 81
+    Total combinational functions : 68
+    Dedicated logic registers : 39
+Total registers : 39
+Total pins : 70
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

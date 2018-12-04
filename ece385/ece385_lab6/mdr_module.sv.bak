@@ -1,0 +1,13 @@
+module mdr_module
+		(	input	logic	Clk, Reset, LD_MDR,
+			input logic	[15:0] mdr_din0, mdr_din1,
+			input logic	MIO_EN,
+			output logic[15:0] MDR		
+		);
+		
+		logic[15:0] MDRMUX_OUT;
+		
+		mux4 mdrmux(.d0(mdr_din0), .d1(mdr_din1), .d2(16'h0000), .d3(16'h0000), .s0(MIO_EN), .s1(1'b0), .y(MDRMUX_OUT));
+		register mdr(.Clk, .Reset, .LOAD(LD_MDR), .Din())
+
+endmodule

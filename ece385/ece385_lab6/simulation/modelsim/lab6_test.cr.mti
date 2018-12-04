@@ -1,0 +1,151 @@
+U:/ece385_lab6/register.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/register.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} U:/ece385_lab6/ISDU.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/ISDU.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module ISDU
+
+Top level modules:
+	ISDU
+
+} {} {}} U:/ece385_lab6/mux4.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/mux4.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module mux4
+
+Top level modules:
+	mux4
+
+} {} {}} U:/ece385_lab6/testbench.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/testbench.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} U:/ece385_lab6/pc_module.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/pc_module.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module pc_module
+
+Top level modules:
+	pc_module
+
+} {} {}} U:/ece385_lab6/nzp.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/nzp.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module nzp
+
+Top level modules:
+	nzp
+
+} {} {}} U:/ece385_lab6/tristate.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/tristate.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tristate
+
+Top level modules:
+	tristate
+
+} {} {}} U:/ece385_lab6/mdr_module.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/mdr_module.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module mdr_module
+
+Top level modules:
+	mdr_module
+
+} {} {}} U:/ece385_lab6/Synchronizers.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/Synchronizers.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module sync
+-- Compiling module sync_r0
+-- Compiling module sync_r1
+
+Top level modules:
+	sync
+	sync_r0
+	sync_r1
+
+} {} {}} U:/ece385_lab6/alu_unit.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/alu_unit.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module alu_unit
+
+Top level modules:
+	alu_unit
+
+} {} {}} U:/ece385_lab6/Mem2IO.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/Mem2IO.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module Mem2IO
+
+Top level modules:
+	Mem2IO
+
+} {} {}} U:/ece385_lab6/slc3.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/slc3.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module slc3
+
+Top level modules:
+	slc3
+
+} {} {}} U:/ece385_lab6/SLC3_2.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/SLC3_2.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling package SLC3_2
+
+Top level modules:
+	--none--
+
+} {} {}} U:/ece385_lab6/memory_contents.sv {0 {vlog -work work -sv -stats=none U:/ece385_lab6/memory_contents.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+** Error: U:/ece385_lab6/memory_contents.sv(14): (vlog-13006) Could not find the package (SLC3_2).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+
+** Error: U:/ece385_lab6/memory_contents.sv(73): (vlog-2730) Undefined variable: 'NO_OP'.
+
+
+} {3.0 4.0 5.0 6.0} {}} U:/ece385_lab6/datapath.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/datapath.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} U:/ece385_lab6/lab6_toplevel.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/lab6_toplevel.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module lab6_toplevel
+
+Top level modules:
+	lab6_toplevel
+
+} {} {}} U:/ece385_lab6/test_memory.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/test_memory.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module test_memory
+
+Top level modules:
+	test_memory
+
+} {} {}} U:/ece385_lab6/HexDriver.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/HexDriver.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module HexDriver
+
+Top level modules:
+	HexDriver
+
+} {} {}} U:/ece385_lab6/register_module.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/register_module.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module register_module
+-- Compiling module register_file
+
+Top level modules:
+	register_module
+
+} {} {}} U:/ece385_lab6/ALU.sv {0 {vlog -work work -sv -stats=none U:/ece385_lab6/ALU.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module ALU
+** Error: U:/ece385_lab6/ALU.sv(8): near "b": syntax error, unexpected IDENTIFIER
+
+} {4.0 5.0} {}} U:/ece385_lab6/bus.sv {1 {vlog -work work -sv -stats=none U:/ece385_lab6/bus.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module bus
+
+Top level modules:
+	bus
+
+} {} {}}

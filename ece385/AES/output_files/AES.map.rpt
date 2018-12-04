@@ -1,0 +1,328 @@
+Analysis & Synthesis report for AES
+Sun Apr 01 18:30:57 2018
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Sun Apr 01 18:30:57 2018          ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                      ; AES                                        ;
+; Top-level Entity Name              ; AES                                        ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; AES                ; AES                ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Sun Apr 01 18:30:49 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AES -c AES
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench
+Info (12021): Found 4 design units, including 4 entities, in source file subbytes.sv
+    Info (12023): Found entity 1: SubBytes
+    Info (12023): Found entity 2: InvSubBytes
+    Info (12023): Found entity 3: InvSubBytes32
+    Info (12023): Found entity 4: InvSubBytes128
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.sv
+    Info (12023): Found entity 1: mux4
+Info (12021): Found 2 design units, including 2 entities, in source file keyexpansion.sv
+    Info (12023): Found entity 1: KeyExpansion
+    Info (12023): Found entity 2: KeyExpansionOne
+Info (12021): Found 1 design units, including 1 entities, in source file invshiftrows.sv
+    Info (12023): Found entity 1: InvShiftRows
+Info (12021): Found 5 design units, including 5 entities, in source file invmixcolumns.sv
+    Info (12023): Found entity 1: InvMixColumns
+    Info (12023): Found entity 2: GF_Mul_9
+    Info (12023): Found entity 3: GF_Mul_b
+    Info (12023): Found entity 4: GF_Mul_d
+    Info (12023): Found entity 5: GF_Mul_e
+Info (12021): Found 1 design units, including 1 entities, in source file invaddroundkey.sv
+    Info (12023): Found entity 1: InvAddRoundKey
+Info (12021): Found 1 design units, including 1 entities, in source file control.sv
+    Info (12023): Found entity 1: control
+Info (12021): Found 1 design units, including 1 entities, in source file aes.sv
+    Info (12023): Found entity 1: AES
+Info (12127): Elaborating entity "AES" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at AES.sv(59): inferring latch(es) for variable "Inv_MC", which holds its previous value in one or more paths through the always construct
+Error (10166): SystemVerilog RTL Coding error at AES.sv(59): always_comb construct does not infer purely combinational logic. File: U:/AES/AES.sv Line: 59
+Info (10041): Inferred latch for "Inv_MC[0]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[1]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[2]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[3]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[4]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[5]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[6]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[7]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[8]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[9]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[10]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[11]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[12]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[13]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[14]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[15]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[16]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[17]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[18]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[19]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[20]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[21]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[22]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[23]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[24]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[25]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[26]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[27]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[28]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[29]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[30]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[31]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[32]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[33]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[34]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[35]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[36]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[37]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[38]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[39]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[40]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[41]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[42]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[43]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[44]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[45]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[46]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[47]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[48]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[49]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[50]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[51]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[52]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[53]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[54]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[55]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[56]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[57]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[58]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[59]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[60]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[61]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[62]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[63]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[64]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[65]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[66]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[67]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[68]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[69]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[70]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[71]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[72]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[73]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[74]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[75]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[76]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[77]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[78]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[79]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[80]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[81]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[82]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[83]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[84]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[85]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[86]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[87]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[88]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[89]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[90]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[91]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[92]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[93]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[94]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[95]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[96]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[97]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[98]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[99]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[100]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[101]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[102]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[103]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[104]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[105]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[106]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[107]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[108]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[109]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[110]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[111]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[112]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[113]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[114]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[115]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[116]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[117]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[118]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[119]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[120]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[121]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[122]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[123]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[124]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[125]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[126]" at AES.sv(61)
+Info (10041): Inferred latch for "Inv_MC[127]" at AES.sv(61)
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 639 megabytes
+    Error: Processing ended: Sun Apr 01 18:30:58 2018
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:21
+
+

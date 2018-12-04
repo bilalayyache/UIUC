@@ -1,0 +1,217 @@
+module mario_image();
+
+
+
+	// FSM control (next state logic
+	 always_comb begin
+		  // FSM control
+		  next_state = state;
+		  next_counter = counter;
+		  Mario_counter_in = Mario_counter;
+		  
+		  unique case (state)
+		     stand_r:
+			     if (d_on) begin
+						next_state = run_1_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (a_on) begin
+						next_state = run_1_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else begin
+						next_state = stand_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  
+			  stand_l:
+			     if (d_on) begin
+						next_state = run_1_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (a_on) begin
+						next_state = run_1_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else begin
+						next_state = stand_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+			  
+			  run_1_r:
+			     if (d_on && Mario_counter[22]) begin
+						next_state = run_2_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (d_on) begin
+						next_state = run_1_r;
+						next_counter = 1'b0;
+						Mario_counter_in = Mario_counter + 1'b1;
+				  end
+				  // turn around case
+				  else if (a_on) begin
+						next_state = run_1_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else begin
+						next_state = stand_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  
+			  run_1_l:
+			     if (a_on && Mario_counter[22]) begin
+						next_state = run_2_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (a_on) begin
+						next_state = run_1_l;
+						next_counter = 1'b0;
+						Mario_counter_in = Mario_counter + 1'b1;
+				  end
+				  // turn around case
+				  else if (d_on) begin
+						next_state = run_1_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else begin
+						next_state = stand_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  
+			  run_2_r:
+				  if (d_on && Mario_counter[22] && ~counter) begin
+						next_state = run_3_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (d_on && Mario_counter[22] && counter) begin
+						next_state = run_1_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (d_on && ~Mario_counter[22]) begin
+						next_state = run_2_r;
+						next_counter = counter;
+						Mario_counter_in = Mario_counter + 24'd1;;
+				  end
+				  else if (a_on) begin
+						next_state = run_1_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else begin
+						next_state = stand_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  
+			  run_2_l:
+				  if (a_on && Mario_counter[22] && ~counter) begin
+						next_state = run_3_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (a_on && Mario_counter[22] && counter) begin
+						next_state = run_1_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else if (a_on && ~Mario_counter[22]) begin
+						next_state = run_2_l;
+						next_counter = counter;
+						Mario_counter_in = Mario_counter + 24'd1;;
+				  end
+				  else if (d_on) begin
+						next_state = run_1_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  else begin
+						next_state = stand_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+				  end
+				  
+			  run_3_r:
+					if (d_on && ~Mario_counter[22]) begin
+						next_state = run_3_r;
+						next_counter = 1'b0;
+						Mario_counter_in = Mario_counter + 24'd1;
+				   end
+					else if (d_on) begin
+						next_state = run_2_r;
+						next_counter = 1'b1;
+						Mario_counter_in = 24'd0;
+					end
+					else if (a_on) begin
+						next_state = run_1_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+					end
+					else begin
+						next_state = stand_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+					end
+					
+			  run_3_l:
+					if (a_on && ~Mario_counter[22]) begin
+						next_state = run_3_l;
+						next_counter = 1'b0;
+						Mario_counter_in = Mario_counter + 24'd1;
+				   end
+					else if (a_on) begin
+						next_state = run_2_l;
+						next_counter = 1'b1;
+						Mario_counter_in = 24'd0;
+					end
+					else if (d_on) begin
+						next_state = run_1_r;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+					end
+					else begin
+						next_state = stand_l;
+						next_counter = 1'b0;
+						Mario_counter_in = 24'd0;
+					end
+			  default: ;
+		  
+		  endcase
+		  
+		  // assign output for each state
+		  case(state)
+				stand_r:
+					mario_dout = stand_dout;
+				run_1_r:
+					mario_dout = run_1_dout;
+				run_2_r:
+					mario_dout = run_2_dout;
+				run_3_r:
+					mario_dout = run_3_dout;
+				stand_l:
+					mario_dout = stand_l_dout;
+				run_1_l:
+					mario_dout = run_1_l_dout;
+				run_2_l:
+					mario_dout = run_2_l_dout;
+				run_3_l:
+					mario_dout = run_3_l_dout;
+				default:
+					mario_dout = stand_dout;
+		  
+		  endcase
+	 
+	 end

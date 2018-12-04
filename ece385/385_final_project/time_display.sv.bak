@@ -1,0 +1,3 @@
+module time_display (input Clk, Reset,
+							output logic [15:0] time_display,
+							output logic run_out);

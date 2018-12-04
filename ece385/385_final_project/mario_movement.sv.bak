@@ -1,0 +1,7 @@
+module mario_movement(input       Clk,                // 50 MHz clock
+											 Reset,              // Active-high reset signal
+							 input logic space_on, a_on, s_on, d_on,);
+
+
+
+

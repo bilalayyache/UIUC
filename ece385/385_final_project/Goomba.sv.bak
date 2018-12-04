@@ -1,0 +1,28 @@
+module  Goomba ( input         Clk,                // 50 MHz clock
+                             Reset,              // Active-high reset signal
+                             frame_clk,          // The clock indicating a new frame (~60Hz)
+               input [12:0]   DrawX, DrawY,       // Current pixel coordinates
+					// input [7:0] keycode,
+					input [23:0] stand_dout, run_1_dout, run_2_dout, run_3_dout, jump_dout, jump_l_dout,
+									 stand_l_dout, run_1_l_dout, run_2_l_dout, run_3_l_dout,
+					input space_on, a_on, s_on, d_on, // keycode from keyboard
+               output logic  is_Goomba,            // Whether current pixel belongs to Goomba or background
+					output logic [12:0] Goomba_X_Pos, Goomba_Y_Pos, process,
+					output logic [23:0] Goomba_dout,
+					output logic is_in_air
+              );
+    
+	 //logic is_in_air;
+	 Goomba_image Goomba_image_instance(.*);
+	 Goomba_movement Goomba_movement_instance(.*);
+	 always_comb begin
+        if ( Goomba_X_Pos <= process + DrawX && DrawX + process < Goomba_X_Pos +13'd32 && DrawY >= Goomba_Y_Pos && DrawY < Goomba_Y_Pos + 13'd32) 
+            is_Goomba = 1'b1;
+        else
+            is_Goomba = 1'b0;
+        /* The Goomba's (pixelated) circle is generated using the standard circle formula.  Note that while 
+           the single line is quite powerful descriptively, it causes the synthesis tool to use up three
+           of the 12 available multipliers on the chip! */
+    end
+    
+endmodule

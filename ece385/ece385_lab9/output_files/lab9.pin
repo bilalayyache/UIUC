@@ -1,0 +1,851 @@
+ -- Copyright (C) 2017  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Intel and sold by Intel or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
+CHIP  "lab9"  ASSIGNED TO AN: EP4CE115F29C7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+AES_KEY[87]                  : A6        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[82]              : A7        : output : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[105]             : A8        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+AES_KEY[41]                  : A10       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[15]              : A11       : input  : 2.5 V             :         : 8         : N              
+AES_KEY[47]                  : A12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+GND+                         : A14       :        :                   :         : 8         :                
+GND+                         : A15       :        :                   :         : 7         :                
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+AES_KEY[3]                   : A17       : input  : 2.5 V             :         : 7         : N              
+AES_KEY[40]                  : A18       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[76]              : A19       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+AES_KEY[98]                  : A21       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[5]               : A22       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7         :                
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   :         : 7         :                
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+AES_MSG_DEC[24]              : AA3       : output : 2.5 V             :         : 2         : N              
+AES_KEY[22]                  : AA4       : input  : 2.5 V             :         : 2         : N              
+AES_DONE                     : AA5       : output : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[115]             : AA6       : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[108]             : AA7       : input  : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[54]              : AA8       : output : 2.5 V             :         : 3         : N              
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+AES_MSG_ENC[25]              : AA10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+AES_KEY[88]                  : AA12      : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[120]             : AA13      : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[93]              : AA14      : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[99]              : AA15      : output : 2.5 V             :         : 4         : N              
+AES_KEY[28]                  : AA16      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[74]              : AA17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5         :                
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+AES_MSG_DEC[115]             : AB1       : output : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[114]             : AB2       : output : 2.5 V             :         : 2         : N              
+AES_KEY[18]                  : AB3       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
+AES_MSG_DEC[55]              : AB7       : output : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[112]             : AB8       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[53]              : AB9       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[90]              : AB10      : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[118]             : AB11      : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[58]              : AB12      : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[123]             : AB13      : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[95]              : AB14      : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[37]              : AB15      : output : 2.5 V             :         : 4         : N              
+AES_KEY[32]                  : AB16      : input  : 2.5 V             :         : 4         : N              
+AES_KEY[35]                  : AB17      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[126]             : AB18      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[29]              : AB19      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[99]              : AB20      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
+AES_MSG_ENC[30]              : AB22      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
+AES_MSG_ENC[116]             : AC1       : input  : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[113]             : AC2       : output : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[26]              : AC3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
+GND                          : AC6       : gnd    :                   :         :           :                
+AES_MSG_ENC[81]              : AC7       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[26]              : AC8       : input  : 2.5 V             :         : 3         : N              
+GND                          : AC9       : gnd    :                   :         :           :                
+AES_MSG_DEC[122]             : AC10      : output : 2.5 V             :         : 3         : N              
+AES_KEY[92]                  : AC11      : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[59]              : AC12      : output : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+AES_MSG_DEC[29]              : AC14      : output : 2.5 V             :         : 3         : N              
+AES_KEY[67]                  : AC15      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC16      : gnd    :                   :         :           :                
+AES_MSG_DEC[102]             : AC17      : output : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[65]              : AC18      : output : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[67]              : AC19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC20      : gnd    :                   :         :           :                
+AES_MSG_ENC[3]               : AC21      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC26      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC28      :        :                   :         : 5         :                
+AES_MSG_DEC[124]             : AD1       : output : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[125]             : AD2       : output : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[91]              : AD3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD5       :        :                   :         : 3         :                
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD7       :        :                   :         : 3         :                
+AES_MSG_ENC[49]              : AD8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+AES_MSG_ENC[59]              : AD10      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[90]                  : AD11      : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[89]              : AD12      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+AES_KEY[95]                  : AD14      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[99]                  : AD15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+AES_MSG_DEC[103]             : AD17      : output : 2.5 V             :         : 4         : N              
+AES_KEY[33]                  : AD18      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[6]               : AD19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+AES_MSG_ENC[97]              : AD21      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+AES_MSG_ENC[32]              : AD24      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[7]               : AD25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
+AES_KEY[8]                   : AE1       : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[119]             : AE2       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   :         : 3         :                
+AES_MSG_ENC[91]              : AE7       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[121]             : AE8       : output : 2.5 V             :         : 3         : N              
+AES_KEY[19]                  : AE9       : input  : 2.5 V             :         : 3         : N              
+AES_KEY[118]                 : AE10      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[80]                  : AE11      : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[25]              : AE12      : output : 2.5 V             :         : 3         : N              
+AES_KEY[59]                  : AE13      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[122]                 : AE14      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[61]                  : AE15      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[35]              : AE16      : output : 2.5 V             :         : 4         : N              
+AES_KEY[27]                  : AE17      : input  : 2.5 V             :         : 4         : N              
+AES_KEY[125]                 : AE18      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[36]              : AE19      : output : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[100]             : AE20      : output : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[103]             : AE21      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[24]              : AE22      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[63]              : AE23      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[40]              : AE24      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[96]              : AE25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5         :                
+GND                          : AF1       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 2         :                
+AES_MSG_ENC[127]             : AF3       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF5       :        :                   :         : 3         :                
+AES_MSG_ENC[55]              : AF6       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[53]              : AF7       : output : 2.5 V             :         : 3         : N              
+AES_KEY[12]                  : AF8       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[122]             : AF9       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[119]             : AF10      : output : 2.5 V             :         : 3         : N              
+AES_KEY[16]                  : AF11      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[119]                 : AF12      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[91]                  : AF13      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[124]                 : AF14      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[127]                 : AF15      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[62]              : AF16      : output : 2.5 V             :         : 4         : N              
+AES_KEY[26]                  : AF17      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[67]              : AF18      : output : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[61]              : AF19      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[97]              : AF20      : output : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[28]              : AF21      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[125]             : AF22      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[56]              : AF23      : input  : 2.5 V             :         : 4         : N              
+AES_KEY[62]                  : AF24      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[126]             : AF25      : output : 2.5 V             :         : 4         : N              
+AES_KEY[36]                  : AF26      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
+AES_KEY[17]                  : AG4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AG5       : gnd    :                   :         :           :                
+AES_MSG_DEC[31]              : AG6       : output : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[58]              : AG7       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[57]              : AG8       : output : 2.5 V             :         : 3         : N              
+GND                          : AG9       : gnd    :                   :         :           :                
+AES_MSG_DEC[92]              : AG10      : output : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[89]              : AG11      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[56]                  : AG12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AG13      : gnd    :                   :         :           :                
+AES_KEY[77]                  : AG14      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[78]                  : AG15      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG16      : gnd    :                   :         :           :                
+AES_MSG_DEC[63]              : AG17      : output : 2.5 V             :         : 4         : N              
+AES_KEY[29]                  : AG18      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[33]              : AG19      : output : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+AES_MSG_DEC[127]             : AG21      : output : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[96]              : AG22      : output : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[64]              : AG23      : output : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+AES_MSG_ENC[39]              : AG25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+AES_MSG_ENC[95]              : AH3       : input  : 2.5 V             :         : 3         : N              
+AES_KEY[53]                  : AH4       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+AES_MSG_ENC[27]              : AH6       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[48]              : AH7       : output : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[124]             : AH8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+AES_MSG_DEC[94]              : AH10      : output : 2.5 V             :         : 3         : N              
+AES_KEY[23]                  : AH11      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[94]                  : AH12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+AES_KEY[109]                 : AH14      : input  : 2.5 V             :         : 3         : N              
+AES_KEY[110]                 : AH15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+AES_MSG_DEC[61]              : AH17      : output : 2.5 V             :         : 4         : N              
+AES_KEY[25]                  : AH18      : input  : 2.5 V             :         : 4         : N              
+AES_KEY[68]                  : AH19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+AES_KEY[70]                  : AH21      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[31]              : AH22      : input  : 2.5 V             :         : 4         : N              
+AES_MSG_DEC[68]              : AH23      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+AES_KEY[37]                  : AH25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+GND                          : B5        : gnd    :                   :         :           :                
+AES_MSG_DEC[17]              : B6        : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[8]               : B7        : output : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[87]              : B8        : input  : 2.5 V             :         : 8         : N              
+GND                          : B9        : gnd    :                   :         :           :                
+AES_KEY[51]                  : B10       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[111]             : B11       : output : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+GND                          : B13       : gnd    :                   :         :           :                
+GND+                         : B14       :        :                   :         : 8         :                
+GND+                         : B15       :        :                   :         : 7         :                
+GND                          : B16       : gnd    :                   :         :           :                
+AES_MSG_DEC[108]             : B17       : output : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[4]               : B18       : output : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[71]              : B19       : output : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+AES_KEY[24]                  : B21       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[69]              : B22       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B23       :        :                   :         : 7         :                
+GND                          : B24       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B26       :        :                   :         : 7         :                
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+AES_MSG_ENC[11]              : C7        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[21]              : C8        : output : 2.5 V             :         : 8         : N              
+AES_KEY[116]                 : C9        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[75]              : C10       : output : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[20]              : C11       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[77]              : C12       : output : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[77]              : C13       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[45]              : C14       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[76]              : C15       : output : 2.5 V             :         : 7         : N              
+AES_KEY[65]                  : C16       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[110]             : C17       : input  : 2.5 V             :         : 7         : N              
+AES_KEY[101]                 : C18       : input  : 2.5 V             :         : 7         : N              
+AES_KEY[6]                   : C19       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[34]              : C20       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[98]              : C21       : output : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[101]             : C22       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[109]             : C23       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[46]              : C24       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[35]              : C25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 6         :                
+GND                          : C28       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
+GND                          : D3        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
+AES_MSG_ENC[114]             : D6        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[82]              : D7        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[85]              : D8        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[9]               : D9        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[43]              : D10       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[85]              : D11       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[78]              : D12       : output : 2.5 V             :         : 8         : N              
+AES_KEY[74]                  : D13       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[110]             : D14       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[42]              : D15       : output : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[46]              : D16       : output : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[10]              : D17       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[104]             : D18       : input  : 2.5 V             :         : 7         : N              
+AES_KEY[104]                 : D19       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[105]             : D20       : output : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[28]              : D21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7         :                
+AES_MSG_ENC[8]               : D24       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D25       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 6         :                
+AES_MSG_ENC[22]              : E1        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 8         :                
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+AES_MSG_ENC[21]              : E7        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[42]              : E8        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+AES_MSG_ENC[13]              : E10       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[13]              : E11       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[83]              : E12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+AES_KEY[73]                  : E14       : input  : 2.5 V             :         : 8         : N              
+AES_KEY[7]                   : E15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+AES_MSG_ENC[2]               : E17       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[71]              : E18       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[68]              : E19       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+AES_KEY[39]                  : E24       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[72]              : E25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 6         :                
+AES_MSG_ENC[107]             : F1        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[106]             : F2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
+GND                          : F6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
+AES_MSG_ENC[83]              : F8        : input  : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+AES_MSG_ENC[111]             : F10       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[18]              : F11       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[11]              : F12       : output : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+AES_KEY[75]                  : F14       : input  : 2.5 V             :         : 8         : N              
+AES_KEY[72]                  : F15       : input  : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+AES_MSG_DEC[73]              : F17       : output : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[66]              : F18       : output : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[38]              : F19       : input  : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+AES_MSG_ENC[44]              : F21       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F22       :        :                   :         : 7         :                
+GND                          : F23       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
+AES_MSG_ENC[23]              : G1        : input  : 2.5 V             :         : 1         : N              
+AES_KEY[11]                  : G2        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
+AES_MSG_ENC[14]              : G4        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+AES_MSG_ENC[51]              : G9        : input  : 2.5 V             :         : 8         : N              
+AES_MSG_ENC[45]              : G10       : input  : 2.5 V             :         : 8         : N              
+AES_KEY[52]                  : G11       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[18]              : G12       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[19]              : G13       : output : 2.5 V             :         : 8         : N              
+AES_KEY[43]                  : G14       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[2]               : G15       : output : 2.5 V             :         : 7         : N              
+AES_KEY[1]                   : G16       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[7]               : G17       : output : 2.5 V             :         : 7         : N              
+AES_KEY[44]                  : G18       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_ENC[37]              : G19       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[0]               : G20       : output : 2.5 V             :         : 7         : N              
+AES_KEY[105]                 : G21       : input  : 2.5 V             :         : 7         : N              
+AES_MSG_DEC[1]               : G22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G28       :        :                   :         : 6         :                
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+AES_KEY[14]                  : H3        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_ENC[106]             : H4        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[12]              : H5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
+GNDA3                        : H9        : gnd    :                   :         :           :                
+AES_MSG_ENC[41]              : H10       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+AES_MSG_DEC[23]              : H12       : output : 2.5 V             :         : 8         : N              
+AES_KEY[10]                  : H13       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[41]              : H14       : output : 2.5 V             :         : 8         : N              
+AES_KEY[106]                 : H15       : input  : 2.5 V             :         : 7         : N              
+AES_KEY[66]                  : H16       : input  : 2.5 V             :         : 7         : N              
+AES_KEY[2]                   : H17       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+AES_KEY[69]                  : H19       : input  : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+AES_MSG_DEC[34]              : H21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H26       :        :                   :         : 6         :                
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+CLK                          : J1        : input  : 2.5 V             :         : 1         : N              
+GND                          : J2        : gnd    :                   :         :           :                
+AES_MSG_DEC[107]             : J3        : output : 2.5 V             :         : 1         : N              
+AES_MSG_ENC[19]              : J4        : input  : 2.5 V             :         : 1         : N              
+AES_KEY[107]                 : J5        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[9]               : J6        : output : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[16]              : J7        : output : 2.5 V             :         : 1         : N              
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+AES_KEY[9]                   : J10       : input  : 2.5 V             :         : 8         : N              
+GND                          : J11       : gnd    :                   :         :           :                
+AES_MSG_ENC[43]              : J12       : input  : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[109]             : J13       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[79]              : J14       : output : 2.5 V             :         : 8         : N              
+AES_MSG_DEC[72]              : J15       : output : 2.5 V             :         : 7         : N              
+AES_KEY[76]                  : J16       : input  : 2.5 V             :         : 7         : N              
+AES_KEY[0]                   : J17       : input  : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+AES_KEY[5]                   : J19       : input  : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 6         :                
+AES_MSG_ENC[73]              : J26       : input  : 2.5 V             :         : 6         : N              
+GND+                         : J27       :        :                   :         : 6         :                
+GND+                         : J28       :        :                   :         : 6         :                
+AES_MSG_DEC[10]              : K1        : output : 2.5 V             :         : 1         : N              
+AES_MSG_ENC[117]             : K2        : input  : 2.5 V             :         : 1         : N              
+AES_KEY[20]                  : K3        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[47]              : K4        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+AES_KEY[15]                  : K7        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[15]              : K8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+VCCINT                       : K15       : power  :                   : 1.2V    :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K21       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 6         :                
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :         : 6         :                
+AES_MSG_ENC[78]              : K27       : input  : 2.5 V             :         : 6         : N              
+AES_MSG_DEC[104]             : K28       : output : 2.5 V             :         : 6         : N              
+AES_MSG_DEC[22]              : L1        : output : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[20]              : L2        : output : 2.5 V             :         : 1         : N              
+AES_KEY[46]                  : L3        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[44]              : L4        : output : 2.5 V             :         : 1         : N              
+AES_MSG_ENC[12]              : L5        : input  : 2.5 V             :         : 1         : N              
+AES_KEY[55]                  : L6        : input  : 2.5 V             :         : 1         : N              
+AES_KEY[79]                  : L7        : input  : 2.5 V             :         : 1         : N              
+AES_KEY[111]                 : L8        : input  : 2.5 V             :         : 1         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L21       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 6         :                
+AES_KEY[4]                   : L23       : input  : 2.5 V             :         : 6         : N              
+AES_KEY[108]                 : L24       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L25       :        :                   :         : 6         :                
+AES_KEY[103]                 : L26       : input  : 2.5 V             :         : 6         : N              
+AES_KEY[42]                  : L27       : input  : 2.5 V             :         : 6         : N              
+AES_KEY[97]                  : L28       : input  : 2.5 V             :         : 6         : N              
+AES_MSG_DEC[51]              : M1        : output : 2.5 V             :         : 1         : N              
+AES_KEY[50]                  : M2        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[14]              : M3        : output : 2.5 V             :         : 1         : N              
+AES_KEY[13]                  : M4        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[81]              : M5        : output : 2.5 V             :         : 1         : N              
+nSTATUS                      : M6        :        :                   :         : 1         :                
+AES_MSG_DEC[50]              : M7        : output : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[86]              : M8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 6         :                
+MSEL2                        : M22       :        :                   :         : 6         :                
+AES_MSG_DEC[6]               : M23       : output : 2.5 V             :         : 6         : N              
+AES_MSG_ENC[47]              : M24       : input  : 2.5 V             :         : 6         : N              
+AES_MSG_DEC[40]              : M25       : output : 2.5 V             :         : 6         : N              
+AES_MSG_ENC[66]              : M26       : input  : 2.5 V             :         : 6         : N              
+AES_MSG_DEC[3]               : M27       : output : 2.5 V             :         : 6         : N              
+AES_KEY[102]                 : M28       : input  : 2.5 V             :         : 6         : N              
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+AES_MSG_DEC[87]              : N3        : output : 2.5 V             :         : 1         : N              
+AES_KEY[114]                 : N4        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[84]              : N8        : output : 2.5 V             :         : 1         : N              
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+AES_KEY[45]                  : N21       : input  : 2.5 V             :         : 6         : N              
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+AES_KEY[34]                  : N25       : input  : 2.5 V             :         : 6         : N              
+AES_MSG_DEC[69]              : N26       : output : 2.5 V             :         : 6         : N              
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+AES_KEY[82]                  : P1        : input  : 2.5 V             :         : 1         : N              
+AES_MSG_DEC[52]              : P2        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+AES_KEY[38]                  : P21       : input  : 2.5 V             :         : 5         : N              
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+AES_MSG_DEC[5]               : P25       : output : 2.5 V             :         : 6         : N              
+AES_MSG_DEC[101]             : P26       : output : 2.5 V             :         : 6         : N              
+AES_MSG_ENC[33]              : P27       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+AES_KEY[115]                 : R1        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[86]              : R2        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[85]                  : R3        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[49]              : R4        : output : 2.5 V             :         : 2         : N              
+AES_KEY[54]                  : R5        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[84]                  : R6        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[83]                  : R7        : input  : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+AES_MSG_ENC[98]              : R21       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[1]               : R22       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[70]              : R23       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[4]               : R24       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[0]               : R25       : input  : 2.5 V             :         : 5         : N              
+AES_KEY[71]                  : R26       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[100]             : R27       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_DEC[70]              : R28       : output : 2.5 V             :         : 5         : N              
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+AES_MSG_DEC[80]              : T3        : output : 2.5 V             :         : 2         : N              
+RESET                        : T4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+AES_KEY[81]                  : T7        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[94]              : T8        : input  : 2.5 V             :         : 2         : N              
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+AES_KEY[120]                 : T21       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[64]              : T22       : input  : 2.5 V             :         : 5         : N              
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+AES_KEY[100]                 : T25       : input  : 2.5 V             :         : 5         : N              
+AES_KEY[64]                  : T26       : input  : 2.5 V             :         : 5         : N              
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+AES_MSG_ENC[84]              : U1        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[48]              : U2        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[117]                 : U3        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[86]                  : U4        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[113]                 : U5        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[112]             : U6        : output : 2.5 V             :         : 2         : N              
+AES_KEY[89]                  : U7        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[121]                 : U8        : input  : 2.5 V             :         : 2         : N              
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+AES_MSG_ENC[123]             : U21       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_DEC[39]              : U22       : output : 2.5 V             :         : 5         : N              
+AES_KEY[60]                  : U23       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[60]              : U24       : input  : 2.5 V             :         : 5         : N              
+AES_KEY[31]                  : U25       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_DEC[38]              : U26       : output : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[36]              : U27       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[93]              : U28       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[90]              : V1        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[117]             : V2        : output : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[52]              : V3        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_DEC[116]             : V4        : output : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[113]             : V5        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[54]              : V6        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[17]              : V7        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[16]              : V8        : input  : 2.5 V             :         : 2         : N              
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+AES_MSG_DEC[60]              : V21       : output : 2.5 V             :         : 5         : N              
+AES_KEY[126]                 : V22       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V23       :        :                   :         : 5         :                
+AES_MSG_ENC[92]              : V24       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[62]              : V25       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[65]              : V26       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_DEC[27]              : V27       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V28       :        :                   :         : 5         :                
+AES_KEY[49]                  : W1        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[112]                 : W2        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[57]                  : W3        : input  : 2.5 V             :         : 2         : N              
+AES_START                    : W4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+AES_KEY[21]                  : W7        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[120]             : W8        : input  : 2.5 V             :         : 2         : N              
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+VCCINT                       : W16       : power  :                   : 1.2V    :           :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+AES_KEY[30]                  : W21       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_DEC[32]              : W22       : output : 2.5 V             :         : 5         : N              
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W26       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5         :                
+AES_MSG_ENC[121]             : W28       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[80]              : Y1        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[79]              : Y2        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[58]                  : Y3        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[48]                  : Y4        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[50]              : Y5        : input  : 2.5 V             :         : 2         : N              
+AES_MSG_ENC[57]              : Y6        : input  : 2.5 V             :         : 2         : N              
+AES_KEY[123]                 : Y7        : input  : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+AES_MSG_ENC[118]             : Y10       : input  : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+AES_MSG_DEC[56]              : Y12       : output : 2.5 V             :         : 3         : N              
+AES_MSG_DEC[88]              : Y13       : output : 2.5 V             :         : 3         : N              
+AES_KEY[93]                  : Y14       : input  : 2.5 V             :         : 3         : N              
+AES_KEY[63]                  : Y15       : input  : 2.5 V             :         : 3         : N              
+AES_MSG_ENC[88]              : Y16       : input  : 2.5 V             :         : 4         : N              
+AES_MSG_ENC[102]             : Y17       : input  : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4         :                
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+AES_KEY[96]                  : Y22       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5         :                
+AES_MSG_DEC[30]              : Y26       : output : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[75]              : Y27       : input  : 2.5 V             :         : 5         : N              
+AES_MSG_ENC[74]              : Y28       : input  : 2.5 V             :         : 5         : N              

@@ -1,0 +1,157 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kathe/Desktop/ECE385/simulation/modelsim
+valtera_reset_controller
+Z1 !s110 1509674182
+!i10b 1
+!s100 VEhLaE^KT@RiagZkfkKI93
+IUa`4`AjeNQ;Yg@EciMDUf1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1509671398
+8C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_controller.v
+FC:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_controller.v
+L0 42
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1509674182.286000
+!s107 C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vga_clk|+incdir+C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+Z5 o-vlog01compat -work vga_clk
+Z6 !s92 -vlog01compat -work vga_clk +incdir+C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 UTD:?4E=?>;X@do<;V;hQ1
+Io8CfZIV<az_Kf_j;mY9iz0
+R2
+R0
+R3
+8C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_synchronizer.v
+FC:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R4
+r1
+!s85 0
+31
+!s108 1509674182.386000
+!s107 C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vga_clk|+incdir+C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R5
+R6
+vvga_clk
+R1
+!i10b 1
+!s100 G1]3CaE]hnJIeneV6fCKz1
+Io41D43QR[7_hYmQNhX]Y31
+R2
+R0
+R3
+8C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/vga_clk.v
+FC:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/vga_clk.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1509674182.201000
+!s107 C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/vga_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vga_clk|+incdir+C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis|C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/vga_clk.v|
+!i113 1
+R5
+!s92 -vlog01compat -work vga_clk +incdir+C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis
+vvga_clk_altpll_0
+R1
+!i10b 1
+!s100 mOB]XNhRFD?Gi3MoAIhZc0
+I:NQhb7>Z6bOK=QVNdJ59N0
+R2
+R0
+R3
+Z7 8C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/vga_clk_altpll_0.v
+Z8 FC:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/vga_clk_altpll_0.v
+L0 214
+R4
+r1
+!s85 0
+31
+Z9 !s108 1509674182.471000
+Z10 !s107 C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/vga_clk_altpll_0.v|
+Z11 !s90 -reportprogress|300|-vlog01compat|-work|vga_clk|+incdir+C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules|C:/Users/kathe/Desktop/ECE385/vga_clk/synthesis/submodules/vga_clk_altpll_0.v|
+!i113 1
+R5
+R6
+vvga_clk_altpll_0_altpll_m342
+R1
+!i10b 1
+!s100 ARQhI`S?@h9RbIO^4L<2W0
+IlJVk0[i:YBl=LVYeRgYBY0
+R2
+R0
+R3
+R7
+R8
+L0 131
+R4
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R5
+R6
+vvga_clk_altpll_0_dffpipe_l2c
+R1
+!i10b 1
+!s100 =Oc:6E;KF>jFI0P@80>0N0
+I`^O_6XID;SQ669EM>Kgjz3
+R2
+R0
+R3
+R7
+R8
+L0 38
+R4
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R5
+R6
+vvga_clk_altpll_0_stdsync_sv6
+R1
+!i10b 1
+!s100 V2M45GZa`:Z2U[HbY^^RD3
+I_=??f;e_f[^92f=?n>9;F0
+R2
+R0
+R3
+R7
+R8
+L0 99
+R4
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R5
+R6

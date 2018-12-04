@@ -1,0 +1,29 @@
+Quartus II Archive log --	U:/ece385_lab5/multiplier_tmp_archive.qarlog
+
+Archive:	U:/ece385_lab5/multiplier_tmp_archive.qar
+Date:		Thu Feb 15 15:16:17 2018
+Quartus II 64-Bit		15.0.2 Build 153 07/15/2015 SJ Full Version
+
+	=========== Files Selected: ===========
+U:/ece385_lab5/Control.sv
+U:/ece385_lab5/HexDriver.sv
+U:/ece385_lab5/Synchronizers.sv
+U:/ece385_lab5/adder.sv
+U:/ece385_lab5/d_flipflop.sv
+U:/ece385_lab5/lab5_multiplier.sdc
+U:/ece385_lab5/multiplier.qpf
+U:/ece385_lab5/multiplier.qsf
+U:/ece385_lab5/multiplier_toplevel.sv
+U:/ece385_lab5/register.sv
+U:/ece385_lab5/testbench.sv
+c:/altera/15.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Thu Feb 15 15:16:33 2018
+Source archive file:	U:/ece385_lab5/multiplier_tmp_archive.qar
+Archive was extracted into	I:/ding33_yichi3/
+		 - successfully.

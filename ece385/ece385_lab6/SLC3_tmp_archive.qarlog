@@ -1,0 +1,42 @@
+Quartus II Archive log --	U:/ece385_lab6/SLC3_tmp_archive.qarlog
+
+Archive:	U:/ece385_lab6/SLC3_tmp_archive.qar
+Date:		Thu Mar 01 15:10:53 2018
+Quartus II 64-Bit		15.0.2 Build 153 07/15/2015 SJ Full Version
+
+	=========== Files Selected: ===========
+U:/ece385_lab6/HexDriver.sv
+U:/ece385_lab6/ISDU.sv
+U:/ece385_lab6/Mem2IO.sv
+U:/ece385_lab6/SLC3.qpf
+U:/ece385_lab6/SLC3.qsf
+U:/ece385_lab6/SLC3_2.sv
+U:/ece385_lab6/Synchronizers.sv
+U:/ece385_lab6/alu_unit.sv
+U:/ece385_lab6/bus.sv
+U:/ece385_lab6/datapath.sv
+U:/ece385_lab6/lab6.sdc
+U:/ece385_lab6/lab6_toplevel.sv
+U:/ece385_lab6/mdr_module.sv
+U:/ece385_lab6/memory_contents.sv
+U:/ece385_lab6/mux4.sv
+U:/ece385_lab6/nzp.sv
+U:/ece385_lab6/pc_module.sv
+U:/ece385_lab6/register.sv
+U:/ece385_lab6/register_module.sv
+U:/ece385_lab6/slc3.sv
+U:/ece385_lab6/test_memory.sv
+U:/ece385_lab6/testbench.sv
+U:/ece385_lab6/testbench_xortest.sv
+U:/ece385_lab6/tristate.sv
+c:/altera/15.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Thu Mar 01 15:10:56 2018
+Source archive file:	U:/ece385_lab6/SLC3_tmp_archive.qar
+Archive was extracted into	J:/yichi3_ding33/
+		 - successfully.
