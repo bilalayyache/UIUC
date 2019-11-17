@@ -60,25 +60,43 @@ __global__ void forward_kernel(float *y, const float *x, const int B, const int 
     //     y4d(b, m, h, w) = acc;
     // }
 
-    __shared__ float x_shared[X_TILE_WIDTH*X_TILE_WIDTH]
+    // __shared__ float x_shared[X_TILE_WIDTH][X_TILE_WIDTH]
+    extern __shared__ float shmem[];
+    float* x_shared = &shmem[0];
     float acc = 0.0;
-    if (b < B && m < M){
+    if (h < H && w < W){
         for (int c = 0; c < C; ++c){
-            if (h < H && w < W) x_shared2d(ty, tx) = x4d(b, c, h, w);
-            else x_shared2d(ty, tx) = 0;
+            x_shared2d(ty, tx) = x4d(b, c, h, w);
             __syncthreads();
-            if (tx < TILE_WIDTH && ty < TILE_WIDTH){
-                for (int p = 0; p < K; ++p){
-                    for (int q = 0; q < K; ++q){
-                        acc += x_shared2d(ty+p, tx+q) * k_const4d(m, c, p, q);
-                    }
+            for (int p = 0; p < K; ++p){
+                for (int q = 0; q < K; ++q){
+                    if (ty+p < TILE_WIDTH && tx+q < TILE_WIDTH) acc += x_shared2d(ty+p, tx+q) * k_const4d(m, c, p, q);
+                    else acc += x4d(b, c, h+p, w+q) * k_const4d(m, c, p, q);
                 }
             }
             __syncthreads();
         }
-        if (h < H_out && w < W_out)
-            y4d(b, m, h, w) = acc;
     }
+    if (h < H_out && w < W_out) y4d(b, m, h, w) = acc;
+
+
+    // if (b < B && m < M){
+    //     for (int c = 0; c < C; ++c){
+    //         if (h < H && w < W) x_shared2d(ty, tx) = x4d(b, c, h, w);
+    //         else x_shared2d(ty, tx) = 0;
+    //         __syncthreads();
+    //         if (tx < TILE_WIDTH && ty < TILE_WIDTH){
+    //             for (int p = 0; p < K; ++p){
+    //                 for (int q = 0; q < K; ++q){
+    //                     acc += x_shared2d(ty+p, tx+q) * k_const4d(m, c, p, q);
+    //                 }
+    //             }
+    //         }
+    //         __syncthreads();
+    //     }
+    //     if (h < H_out && w < W_out)
+    //         y4d(b, m, h, w) = acc;
+    // }
 
 
 
@@ -120,7 +138,7 @@ void forward<gpu, float>(mshadow::Tensor<gpu, 4, float> &y, const mshadow::Tenso
     // Set the kernel dimensions
     dim3 gridDim(B, M, Z);
     // dim3 blockDim(TILE_WIDTH, TILE_WIDTH, 1);
-    dim3 blockDim(X_TILE_WIDTH, X_TILE_WIDTH, 1);
+    dim3 blockDim(TILE_WIDTH, TILE_WIDTH, 1);
     // setup constant memory
     int const_size = M*C*K*K*sizeof(float);
     cudaMemcpyToSymbol(k_const, w.dptr_, const_size);
